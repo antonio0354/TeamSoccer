@@ -83,7 +83,7 @@
   <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
   <input class="controls" type="password" name="contraseña2" id="contraseña2" placeholder="Repita la contraseña">
   <p>Estoy de acuerdo con <a href="#"> Terminos y Condiciones</a></p>
-  <input class="boton" type="submit" value="Registrar">
+  <input class="boton" type="submit" name="registrar" value="Registrar">
   <p><a href="acceso.php">Ya tengo cuenta</a></p>
 </section>
 

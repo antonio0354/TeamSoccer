@@ -82,7 +82,7 @@
   <input class="controls" type="email" name="correo" id="correo" placeholder="Ingrese su correo">
   <input class="controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
   <p><a href="recuperacion.php">¿Olvidó su contraseña?</a></p>
-  <input class="boton" type="submit" value="Registrar">
+  <input class="boton" type="submit" name="acceder" value="acceder">
   <p><a href="registro.php">Crear una cuenta</a></p>
 </section>
 
