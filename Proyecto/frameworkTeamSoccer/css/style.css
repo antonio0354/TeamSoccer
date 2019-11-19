@@ -1,0 +1,64 @@
+body {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    color: #4f5d6e;
+
+    position: relative;
+}
+
+.uno {
+    text-align: center;
+    color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 5px 4px 5px #000;
+    background-color: red;
+    border: 1px solid white;
+    font-family: 'Merriweather', serif;
+    
+
+}
+ nav {
+      margin-top: 10px;
+
+
+      font-family: 'Merriweather', serif;
+
+      box-shadow: 5px 4px 5px #000;
+      background-color: red;
+      font-size: 19px;
+      overflow: hidden;
+
+
+    }
+
+
+    .botones {
+      margin-left: 500px;
+    }
+
+
+
+footer {
+    
+    background-color: red;
+    height: 50px;
+    color: white;
+    clear: both;
+    box-shadow: 5px 4px 5px #000;
+    font-family: 'Oswald', serif;
+
+}
+
+p{
+    font-family: 'Oswald', serif;
+}
+
+h2{
+    font-family: 'Heebo', serif;
+
+
+}
+
+
+
