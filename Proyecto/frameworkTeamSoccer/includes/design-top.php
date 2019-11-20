@@ -11,9 +11,9 @@
     </div>
      <div class="row">
                 <div class=" col-sm-12"> 
-                    <a style="color: white;" href="Registrar.html"><span
+                    <a style="color: white;" href="registro.php"><span
                             class="glyphicon glyphicon-user"></span>Resgistrar</a>
-                    <a style="color: white;" href="Acceder.html"><span class="glyphicon glyphicon-log-in"></span>
+                    <a style="color: white;" href="acceso.php"><span class="glyphicon glyphicon-log-in"></span>
                         Acceder</a>
                 </div>
             </div>

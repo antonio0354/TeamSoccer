@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -8,14 +7,9 @@
 
         <?php include("includes/design-top.php"); ?>
         <?php include("includes/nav.php"); ?>
-        <?php include("includes/bodyPrincipal.php"); ?>
 
-        <main>
-            <section class="content">
-                <div class="full-bleed cool-photo">
-                </div>
-            </section>
-        </main>
+        <?php include ("includes/bodyRegistro.php")?>;
+
 
         <?php include("includes/footer.php"); ?>
 
