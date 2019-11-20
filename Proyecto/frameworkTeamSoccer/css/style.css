@@ -56,8 +56,10 @@ p{
 
 h2{
     font-family: 'Heebo', serif;
+}
 
-
+#centrado{
+    justify-content: center;
 }
 
 .form-register{

@@ -46,7 +46,7 @@
                         </li>
                         <li><a style="color: black;" href="Equipos.html"><img
                                     src="iconos/palanca-de-mando.png">Entretenimiento</a></li>
-                        <li><a style="color: black;" href="Equipos.html"><img src="iconos/contacto.png">Contacto</a></li>
+                        <li><a style="color: black;" href="contacto.php"><img src="iconos/contacto.png">Contacto</a></li>
 
 
                     </ul>
