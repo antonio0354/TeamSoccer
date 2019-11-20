@@ -6,7 +6,7 @@
             <h3>Redes Sociales</h3>  
             <div class="col-sm-4" id="bordado" height="300px">
                 <h4>Whatsapp</h4>
-                <img width="200px" height="200px" src="imagenes/whatsapp.png">
+                <img width="200px"  height="200px" src="imagenes/whatsapp.png">
             </div>
             <div class="col-sm-4" id="bordado" height="300px">
                 <h4>Facebook </h4>

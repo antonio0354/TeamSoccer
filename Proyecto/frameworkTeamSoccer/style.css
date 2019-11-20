@@ -7,6 +7,11 @@ body {
     position: relative;
 }
 
+#bordado{
+    border:1px solid;
+    
+}
+
 .uno {
     text-align: center;
     color: aliceblue;
@@ -58,9 +63,7 @@ h2{
     font-family: 'Heebo', serif;
 }
 
-#centrado{
-    justify-content: center;
-}
+
 
 .form-register{
     width: 400px;

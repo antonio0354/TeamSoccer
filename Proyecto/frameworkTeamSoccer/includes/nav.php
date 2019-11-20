@@ -41,7 +41,7 @@
 
                         <li><a style="color: black;" href="Biografia.html"><img
                                     src="iconos/trofeo-de-futbol.png">Competiciones</a></li>
-                        <li><a style="color: black;" href="Videos.html"><img src="iconos/periodico.png">Noticias</a></li>
+                        <li><a style="color: black;" href="noticias.php"><img src="iconos/periodico.png">Noticias</a></li>
                         <li><a style="color: black;" href="Premios.html"><img src="iconos/carrito-de-compras.png">Tienda</a>
                         </li>
                         <li><a style="color: black;" href="Equipos.html"><img
