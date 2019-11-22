@@ -16,7 +16,7 @@
                               <input name="nombre completo" placeholder="Email" class="form-control" type="text">
                             </div>
                             <div class="form-group col-md-12">
-                              <input type="pass" class="form-control" placeholder="Contraseña">
+                                <input type="password" class="form-control" placeholder="Contraseña">
                             </div>
                           </div>
                         <div class="form-row">
