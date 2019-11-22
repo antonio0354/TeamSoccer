@@ -4,7 +4,7 @@
 	        <div class="card">
 	            <div class="card-body">
 	                <div>
-                            <img src="../iconos/contacto.png">
+                            <img src="iconos/usuario.png">
 	                </div>
 	                <div>
 	                    <h4>Sign Up</h4>
