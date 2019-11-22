@@ -1,4 +1,4 @@
-<div class="container" id="main-content">
+<div class="container " id="main-content">
     <div class="row" >
             <h1>Esta es la pagina de contactos por si hay algun problema</h1>  
         </div>
@@ -6,7 +6,7 @@
             <h3>Redes Sociales</h3>  
             <div class="col-sm-4" id="bordado" height="300px">
                 <h4>Whatsapp</h4>
-                <img width="200px"  height="200px" src="imagenes/whatsapp.png">
+                <img width="200px" height="200px" src="imagenes/whatsapp.png">
             </div>
             <div class="col-sm-4" id="bordado" height="300px">
                 <h4>Facebook </h4>

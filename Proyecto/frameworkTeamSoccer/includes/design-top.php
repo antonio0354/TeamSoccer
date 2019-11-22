@@ -1,5 +1,5 @@
 
-<div class="uno container" >
+<div class=" container bg-danger rounded shadow mb-3 text-center" >
 
     <div class="row">
 

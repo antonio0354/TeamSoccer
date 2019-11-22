@@ -1,20 +1,21 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-9"><img width="100%" src="mbape.jpg"></div>
+        <div class="col-sm-9 mb-3"><img width="100%" src="mbape.jpg"></div>
         <div class="col-sm-3">
            
-                <div class="row"style="border-bottom: 1px solid grey; padding-bottom: 20px; margin-top: 10px;">
-                    <div class="col-sm-6"><img style="float: left;" src="imagen.jpg"></div>
+                <div class="row">
+                    <div class="col-sm-6"><img  src="imagen.jpg"></div>
                     <div class="col-sm-6"><p>L'Équipe desvela los problemas del PSG para renovar a Mbappé</p></div>
                 </div>
-
-                <div class="row"style="border-bottom: 1px solid grey; padding-bottom: 20px; margin-top: 10px;">
-                      <div class="col-sm-6"><img style="float: left;" src="imagen.jpg"></div>
+            <hr>
+                <div class="row">
+                      <div class="col-sm-6"><img  src="imagen.jpg"></div>
                     <div class="col-sm-6"><p>L'Équipe desvela los problemas del PSG para renovar a Mbappé</p></div>
                 </div>
-                <div class="row"style="border-bottom: 1px solid grey; padding-bottom: 20px; margin-top: 10px;">
-                    <div class="col-sm-6"><img style="float: left;" src="imagen.jpg"></div>
+            <hr>
+                <div class="row">
+                    <div class="col-sm-6"><img  src="imagen.jpg"></div>
                     <div class="col-sm-6"><p>L'Équipe desvela los problemas del PSG para renovar a Mbappé</p></div>
                 </div>
 
