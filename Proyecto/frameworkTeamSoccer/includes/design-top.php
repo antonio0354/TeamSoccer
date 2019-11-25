@@ -1,5 +1,5 @@
 
-<div class=" container bg-danger rounded shadow mb-3 text-center" >
+<div class="col bg-danger rounded shadow mb-3 text-center" >
 
     <div class="row">
 

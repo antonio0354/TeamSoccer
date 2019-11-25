@@ -1,18 +1,17 @@
-<div class="container mb-3 rounded shadow bg-primary  ">
-    <div class="row">
-        <div class="col-sm-12">
+
+        <div class="col-sm-12 mb-3 rounded shadow bg-primary">
 
 
 
 
 
             <nav class="navbar navbar-expand-md navbar-dark  ">
-                <a class="navbar-brand mr-5" href="index.php">TeamSoccer</a>
+                <a class="navbar-brand" href="index.php">TeamSoccer</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
+                <div class="collapse navbar-collapse ml-auto" id="collapsibleNavbar">
+                    <ul class="navbar-nav ">
                         <li class="nav-item">
                             <a class="nav-link" href="#"><img
                                     src="iconos/trofeo-de-futbol.png">Competiciones</a>
@@ -25,13 +24,13 @@
                         </li>   
                        
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img
+                            <a class="nav-link dropdown-toggle"  id="navbardrop" data-toggle="dropdown"><img
                                     src="iconos/trofeo-copa-deportiva-dibujada-a-mano.png">
                                 Ligas
                             </a>
                             <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Link 1</a>
-                                <a class="dropdown-item" href="#">Link 2</a>
+                                <a class="dropdown-item" href="clasificacion.php">Clasificacion</a>
+                                <a class="dropdown-item" href="equipos.php">Equipos</a>
                                 <a class="dropdown-item" href="#">Link 3</a>
                             </div>
                         </li>
@@ -50,7 +49,4 @@
             </nav>
 
         </div>
-    </div>
-
-
-</div>
+  

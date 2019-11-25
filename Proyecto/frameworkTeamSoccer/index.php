@@ -5,23 +5,23 @@
         <?php include("includes/head-tag-contents.php"); ?>
     </head>
     <body>
-        
-        hola
-        <?php include("includes/design-top.php"); ?>
-        <?php include("includes/nav.php"); ?>
-        <?php include("includes/bodyPrincipal.php"); ?>
-        
+        <div class="container">
 
 
+            <div class="row">
+                <?php include("includes/design-top.php"); ?>
+            </div>
+            <div class="row">
+                <?php include("includes/nav.php"); ?>
+            </div>
+            <div class="row">
+                <?php include("includes/bodyPrincipal.php"); ?>
+            </div>
 
-        <main>
-            <section class="content">
-                <div class="full-bleed cool-photo">
-                </div>
-            </section>
-        </main>
+            <div class="row">
+                <?php include("includes/footer.php"); ?>
+            </div>
 
-        <?php include("includes/footer.php"); ?>
-
+        </div>
     </body>
 </html>
