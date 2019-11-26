@@ -8,13 +8,7 @@
             <div class="row">  <?php include("includes/design-top.php"); ?></div>
                         <div class="row"></div>
             <div class="row"><?php include("includes/nav.php"); ?></div>
-            <div class="row">       <?php include("includes/bodytienda.php"); ?></div>
-
-            
-  
-       
-
-
+            <div class="row">       <?php include("includes/bodyentretenimiento.php"); ?></div>
 
         <main>
             <section class="content">
@@ -29,3 +23,4 @@
       
     </body>
 </html>
+

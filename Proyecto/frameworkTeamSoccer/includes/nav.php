@@ -29,7 +29,7 @@
                             <a class="nav-link" href="noticias.php"><img src="iconos/periodico.png">Noticias</a>
                         </li>
 
-                        <a class="nav-link" href="#"><img src="iconos/carrito-de-compras.png">Tienda</a>
+                        <a class="nav-link" href="tienda.php"><img src="iconos/carrito-de-compras.png">Tienda</a>
                         </li>   
                        
                         <li class="nav-item dropdown">
@@ -44,7 +44,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img
+                            <a class="nav-link" href="entretenimiento.php"><img
                                     src="iconos/palanca-de-mando.png">Entretenimiento</a>
                         </li>
                         <li class="nav-item">
