@@ -26,7 +26,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><img src="iconos/periodico.png">Noticias</a>
+                            <a class="nav-link" href="noticias.php"><img src="iconos/periodico.png">Noticias</a>
                         </li>
 
                         <a class="nav-link" href="#"><img src="iconos/carrito-de-compras.png">Tienda</a>
