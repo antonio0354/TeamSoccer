@@ -4,14 +4,23 @@
         <?php include("includes/head-tag-contents.php"); ?>
     </head>
     <body>
-
-        <?php include("includes/design-top.php"); ?>
-        <?php include("includes/nav.php"); ?>
-
-        <?php include ("includes/bodyRegistro.php")?>;
+        <div class="container">
 
 
-        <?php include("includes/footer.php"); ?>
+            <div class="row">
+                <?php include("includes/design-top.php"); ?>
+            </div>
+            <div class="row">
+                <?php include("includes/nav.php"); ?>
+            </div>
+            <div class="row text-center">
+                <?php include("includes/bodyRegistro.php"); ?>
+            </div>
 
+            <div class="row">
+                <?php include("includes/footer.php"); ?>
+            </div>
+
+        </div>
     </body>
 </html>

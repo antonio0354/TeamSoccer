@@ -5,17 +5,21 @@
     </head>
     
     <body>
-        
-
+<div class="container">
+    <div class="row" >
         <?php include("includes/design-top.php"); ?>
+    </div>
+    
+    <div class="row" >
         <?php include("includes/nav.php"); ?>
-
-        <?php include("includes/bodyAcceso.php"); ?>
-
-
-
-        <?php include("includes/footer.php"); ?>
-
+    </div><div class="row text-center" >
+            <?php include("includes/bodyAcceso.php"); ?>
+    </div>
+    
+    <div class="row" >
+        <?php include("includes/footer.php");?>
+    </div>
+</div>
     </body>
 </html>
 

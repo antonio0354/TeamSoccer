@@ -12,9 +12,18 @@
                 </button>
                 <div class="collapse navbar-collapse ml-auto" id="collapsibleNavbar">
                     <ul class="navbar-nav ">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><img
-                                    src="iconos/trofeo-de-futbol.png">Competiciones</a>
+                    <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><img
+                                    src="iconos/trofeo-de-futbol.png">
+                                Competiciones
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="championsleague.php">Champions League</a>
+                                <a class="dropdown-item" href="#">Europa League</a>
+                                <a class="dropdown-item" href="#">Copa América</a>
+                                <a class="dropdown-item" href="#">Mundial</a>
+                                <a class="dropdown-item" href="#">Eurocopa</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><img src="iconos/periodico.png">Noticias</a>

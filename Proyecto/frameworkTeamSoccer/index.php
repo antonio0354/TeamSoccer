@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
     <head>
@@ -6,7 +5,6 @@
     </head>
     <body>
         <div class="container">
-
 
             <div class="row">
                 <?php include("includes/design-top.php"); ?>
