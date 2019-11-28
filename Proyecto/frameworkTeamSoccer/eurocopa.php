@@ -13,8 +13,8 @@
             <div class="row">
                 <?php include("includes/nav.php"); ?>
             </div>
-            <div class="row">
-                <?php include("includes/bodyEquipos.php"); ?>
+            <div class="row ">
+                <?php include("includes/bodyEurocopa.php"); ?>
             </div>
             <div class="row">
                 <?php include("includes/footer.php"); ?>
