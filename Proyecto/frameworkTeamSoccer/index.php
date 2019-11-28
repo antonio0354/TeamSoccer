@@ -4,7 +4,7 @@
         <?php include("includes/head-tag-contents.php"); ?>
     </head>
     <body>
-        hola
+        
         <div class="container">
 
             <div class="row">
