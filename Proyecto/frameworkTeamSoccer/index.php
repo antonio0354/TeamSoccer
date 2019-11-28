@@ -4,6 +4,7 @@
         <?php include("includes/head-tag-contents.php"); ?>
     </head>
     <body>
+        hola
         <div class="container">
 
             <div class="row">
@@ -19,6 +20,7 @@
             <div class="row">
                 <?php include("includes/footer.php"); ?>
             </div>
+            
 
         </div>
     </body>
