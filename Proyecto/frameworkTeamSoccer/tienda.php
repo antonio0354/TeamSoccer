@@ -5,27 +5,26 @@
     <body>
 
         <div class="container">
-            <div class="row">  <?php include("includes/design-top.php"); ?></div>
-                        <div class="row"></div>
-            <div class="row"><?php include("includes/nav.php"); ?></div>
-            <div class="row">       <?php include("includes/bodytienda.php"); ?></div>
-
-            
-  
-       
-
-
-
-        <main>
-            <section class="content">
-                <div class="full-bleed cool-photo">
+            <header>
+                <div class="row">  
+                    <?php include("includes/design-top.php"); ?>
                 </div>
-            </section>
-        </main>
-            <div class="row">  <?php include("includes/footer.php"); ?></div>
-      
 
+                <div class="row">
+                    <?php include("includes/nav.php"); ?>
+                </div>
+            </header>
+            <main>
+                <div class="row">      
+                    <?php include("includes/bodytienda.php"); ?>
+                </div>
+            </main>
+            <footer>
+                <div class="row">  
+                    <?php include("includes/footer.php"); ?>
+                </div>
+            </footer>
         </div>
-      
+
     </body>
 </html>

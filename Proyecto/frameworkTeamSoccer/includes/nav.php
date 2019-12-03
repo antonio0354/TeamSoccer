@@ -14,7 +14,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto text-center">
                     <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
                                 <img width="20" src="iconos/trofeo-de-futbol.png">Competiciones</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="champions.php">Champions League</a>
@@ -24,7 +24,7 @@
                                 <a class="dropdown-item" href="eurocopa.php">Eurocopa</a>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item ">
                             <a class="nav-link" href="noticias.php" style="white-space: nowrap "><img width="20" src="iconos/periodico.png">Noticias</a>
                         </li>
                         <li class="nav-item">

@@ -2,9 +2,9 @@
 <div class="col-sm-8">
     <div class="row mt-3 mb-3">
         <div class="col">
-            
-          <div class="hovereffect">
-              <img class="img-fluid" src="imagenes/mundial4.jpg">
+
+            <div class="hovereffect">
+                <img class="img-fluid" src="imagenes/mundial4.jpg">
                 <div class="overlay">
                     <h2>Mundial 2022 Qatar</h2>
                     <a class="info" href="#">Ver informacion sobre Mundial Qatar 2022</a>
@@ -12,7 +12,7 @@
             </div>
 
         </div>
-        
+
         <div class="col embed-responsive embed-responsive-16by9">
             <iframe class="img-fluid" src="https://www.youtube.com/embed/Q7iFb-20UV4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>

@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>SEVILLA</strong></div>
             </div>
             <div class="row">
@@ -17,7 +17,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>AT.MADRID</strong></div>
             </div>
             <div class="row">
@@ -25,7 +25,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>R.MADRID</strong></div>
             </div>
             <div class="row">
@@ -34,7 +34,7 @@
         </div>
 
     </div>
-  <div class="row">
+    <div class="row">
         <div class="col-sm-3">
             <div class="row">
                 <div class="col-sm-12"><strong>GETAFE</strong></div>
@@ -44,7 +44,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>ALAVES</strong></div>
             </div>
             <div class="row">
@@ -52,7 +52,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>LEVANTE</strong></div>
             </div>
             <div class="row">
@@ -60,7 +60,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>BETIS</strong></div>
             </div>
             <div class="row">
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>GIRONA</strong></div>
             </div>
             <div class="row">
@@ -87,7 +87,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>ESPAÑOL</strong></div>
             </div>
             <div class="row">
@@ -95,7 +95,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>R.MADRID</strong></div>
             </div>
             <div class="row">
@@ -114,7 +114,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>VALENCIA</strong></div>
             </div>
             <div class="row">
@@ -122,7 +122,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>DEPOR</strong></div>
             </div>
             <div class="row">
@@ -130,8 +130,8 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
-                 <div class="col-sm-12"><strong>LEGANES</strong></div>
+            <div class="row">
+                <div class="col-sm-12"><strong>LEGANES</strong></div>
             </div>
             <div class="row">
                 <div class="col-sm-12 "><img src="imagenes/16.png"></div>
@@ -149,7 +149,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>BILBAO</strong></div>
             </div>
             <div class="row">
@@ -157,7 +157,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>RAYO VALLECANO</strong></div>
             </div>
             <div class="row">
@@ -165,7 +165,7 @@
             </div>
         </div>
         <div class="col-sm-3">
-             <div class="row">
+            <div class="row">
                 <div class="col-sm-12"><strong>HUESCA</strong></div>
             </div>
             <div class="row">
