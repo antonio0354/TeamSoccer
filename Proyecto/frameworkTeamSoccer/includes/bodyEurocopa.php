@@ -1,7 +1,7 @@
 
 <div class="col-sm-8">
-    <div class="row mt-3 mb-3">
-        <div class="col">
+    <div class="row mt-3 mb-3 ">
+        <div class="col border border-secundary p-0">
             <div id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
 
                 <div class="carousel-inner" role="listbox">
@@ -40,7 +40,7 @@
 
 
         </div>
-        <div class="col">
+        <div class="col border border-secundary p-0">
             <div class="hovereffect">
                 <img class="img-fluid" src="imagenes/eurocopaEntradas.jpg">
                 <div class="overlay">
@@ -52,7 +52,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col">
+        <div class="col border border-secundary p-0">
             <div class="hovereffect">
                 <img class="img-fluid" src="imagenes/eurocopC0.jpg">
                 <div class="overlay">
@@ -63,7 +63,7 @@
         </div>
 
 
-        <div class="col">
+        <div class="col border border-secundary p-0">
             <div id="carousel2" class="carousel slide carousel-fade" data-ride="carousel">
 
                 <div class="carousel-inner" role="listbox">
