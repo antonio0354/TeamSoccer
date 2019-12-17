@@ -9,16 +9,12 @@
         </div>
     </div>
     <div class="row "  >
-        <div class="col-sm-3 " >
-            <img class="w-100 p-3"  src="imagenes/pelota champions.png">
-
-        </div>
-        <div class="col-sm-3 " >
-
-            <img  class="w-100 p-3" src="imagenes/pelota telstar.png">
+         <div class="col-sm-6 ">
+           <div class="embed-responsive embed-responsive-16by9">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fTVP3q4Ksms" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>           </div>
         </div>
         <div  class="col-sm-6 " >
-            <h3 class="text-center mt-5">Los nuevos balones de la Liga y Champions League</h3>
+            <h3 class="text-center mt-5">Video promocional del ascenso del Lucena</h3>
         </div>
     </div>
 </div>

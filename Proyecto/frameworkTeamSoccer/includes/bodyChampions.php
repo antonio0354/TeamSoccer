@@ -130,6 +130,20 @@
             </div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-sm-6 ">
+           <div class="embed-responsive embed-responsive-16by9">
+            <iframe  src="https://www.youtube.com/embed/nAhclOK-22E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+           </div>
+             <h4> Mejores goles champions 2018/2019</h4>
+        </div>
+        <div class="col-sm-6 ">
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe  src="https://www.youtube.com/embed/X3Zs-HZczUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             </div>
+       <h4> Video UEFA Champions League 2018/2019</h4>
+        </div>
+        
+    </div>
 </div>
 <div class="col-sm-4 table-responsive">
     <table class="table table-striped">
