@@ -39,5 +39,30 @@
         <a href="https://www.youtube.com/watch?v=Q7iFb-20UV4&feature=emb_logo">https://www.youtube.com/watch?v=Q7iFb-20UV4&feature=emb_logo</a>
     </div>
 
+    <div class="col-sm-4">
+        <h3>Pagina:</h3>
+        <p>Europa League</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>Contenido:</h3>
+        <p>Video:</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>Fuente:</h3>
+        <a href="https://www.youtube.com/watch?time_continue=1&v=WQQouW8ky1w&feature=emb_logo">https://www.youtube.com/watch?time_continue=1&v=WQQouW8ky1w&feature=emb_logo</a>
+    </div>
+ <div class="col-sm-4">
+        <h3>Pagina:</h3>
+        <p>Noticias</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>Contenido:</h3>
+        <p>Video:</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>Fuente:</h3>
+        <a href="https://www.youtube.com/watch?v=fTVP3q4Ksms&feature=emb_logo">https://www.youtube.com/watch?v=fTVP3q4Ksms&feature=emb_logo</a>
+    </div>
+
 
    
