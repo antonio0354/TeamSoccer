@@ -1,18 +1,20 @@
 <div class="col-sm-8">
     <div class="row">
         <div class="col-sm-6">
-            <img class="m-3 w-100" src="imagenes/europalg.jpg">
-        </div> 
+            <div class="embed-responsive embed-responsive-16by9">
+<iframe class="m-3 w-100 embed-responsive-item" src="https://www.youtube.com/embed/WQQouW8ky1w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            </div> 
         <div class="col-sm-6">
-            <img  class="m-3 w-100" src="imagenes/europalg.jpg">
+            <img  class="m-3 w-100" src="imagenes/munir.jpg">
         </div> 
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <img  class="m-3 w-100" src="imagenes/europalg.jpg">
+            <img  class="m-3 w-100" src="imagenes/werner.jpg">
         </div> 
         <div class="col-sm-6">
-            <img  class="m-3 w-100" src="imagenes/europalg.jpg">
+            <img  class="m-3 w-100" src="imagenes/euro.jpeg">
         </div> 
     </div>
 </div>

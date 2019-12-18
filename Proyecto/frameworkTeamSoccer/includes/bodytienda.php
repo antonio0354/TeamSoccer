@@ -41,7 +41,7 @@
 </div>
 <div class="col-md-4 mb-3 col-sm-12">
     <div class="hovereffect">
-        <img class="img-fluid" src="imagenes/zap-1.jpg" alt="">
+        <img class="img-fluid" src="imagenes/pelota1.png" alt="">
         <div class="overlay">
             <h2>Balones</h2>
             <a class="info" href="#">link here</a>
@@ -50,7 +50,7 @@
 </div>
 <div class="col-md-4 mb-3 col-sm-12">
     <div class="hovereffect">
-        <img class="img-fluid" src="imagenes/zap-1.jpg" alt="">
+        <img class="img-fluid" src="imagenes/chaqueta1.jpg" alt="">
         <div class="overlay">
             <h2>Chaquetas</h2>
             <a class="info" href="#">link here</a>
