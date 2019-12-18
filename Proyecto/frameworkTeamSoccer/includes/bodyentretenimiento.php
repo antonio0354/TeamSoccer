@@ -3,7 +3,7 @@
         <div class="hovereffect">
             <img class="img-fluid" src="imagenes/zap-1.jpg" alt="">
             <div class="overlay">
-                <h2>Juego 2</h2>
+                <h2>Juego 1</h2>
                 <a class="info" href="pong.php">link here</a>
             </div>
         </div> 
