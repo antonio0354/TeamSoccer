@@ -16,7 +16,7 @@
                 </div>
             </header>
             <main>
-                <div class="row" >
+                <div class="row text-center" >
                     <?php include("includes/bodyContacto.php"); ?>
                 </div>
             </main>
