@@ -64,5 +64,31 @@
         <a href="https://www.youtube.com/watch?v=fTVP3q4Ksms&feature=emb_logo">https://www.youtube.com/watch?v=fTVP3q4Ksms&feature=emb_logo</a>
     </div>
 
+<div class="col-sm-4">
+        <h3>Pagina:</h3>
+        <p>Todas</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>Contenido:</h3>
+        <p>Imágenes:</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>Fuente (Google Imágenes):</h3>
+        <a href="https://www.google.es/imghp?hl=es">https://www.google.es/imghp?hl=es</a>
+    </div>
+
+<div class="col-sm-4">
+        <h3>Pagina:</h3>
+        <p>Tienda</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>Contenido:</h3>
+        <p>Imágenes:</p>
+    </div>
+    <div class="col-sm-4">
+        <h3>Fuente:</h3>
+        <a href="https://www.sprinter.es/">https://www.sprinter.es/</a>
+    </div>
+
 
    
