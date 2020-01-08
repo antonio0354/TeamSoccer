@@ -208,5 +208,5 @@ function game(){
 // number of frames per second
 let framePerSecond = 50;
 
-//call the game function 50 times every 1 Sec
+
 let loop = setInterval(game,1000/framePerSecond);
