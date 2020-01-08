@@ -1,10 +1,10 @@
-// select canvas element
+//
 const canvas = document.getElementById("pong");
 
-// getContext of canvas = methods and properties to draw and do a lot of thing to the canvas
+// 
 const ctx = canvas.getContext('2d');
 
-// load sounds
+//
 let hit = new Audio();
 let wall = new Audio();
 let userScore = new Audio();
@@ -18,7 +18,7 @@ userScore.src = "sounds/userScore.mp3";
 
 
 
-// Ball object
+// Pelota objeto
 const ball = {
     x : canvas.width/2,
     y : canvas.height/2,
@@ -29,42 +29,42 @@ const ball = {
     color : "WHITE"
 }
 
-// User Paddle
+// Raqueta
 const user = {
-    x : 0, // left side of canvas
-    y : (canvas.height - 100)/2, // -100 the height of paddle
+    x : 0, 
+    y : (canvas.height - 100)/2, 
     width : 10,
     height : 100,
     score : 0,
     color : "WHITE"
 }
 
-// COM Paddle
+// COM raqueta
 const com = {
-    x : canvas.width - 10, // - width of paddle
-    y : (canvas.height - 100)/2, // -100 the height of paddle
+    x : canvas.width - 10, 
+    y : (canvas.height - 100)/2,
     width : 10,
     height : 100,
     score : 0,
     color : "WHITE"
 }
 
-// NET
+// Raya
 const net = {
     x : (canvas.width - 2)/2,
     y : 0,
     height : 10,
     width : 2,
-    color : "WHITE"
+    color : "RED"
 }
 
-// draw a rectangle, will be used to draw paddles
+// Pintar rectangulos de raquetas
 function drawRect(x, y, w, h, color){
     ctx.fillStyle = color;
     ctx.fillRect(x, y, w, h);
 }
 
-// draw circle, will be used to draw the ball
+// Pintar pelota
 function drawArc(x, y, r, color){
     ctx.fillStyle = color;
     ctx.beginPath();
@@ -73,7 +73,7 @@ function drawArc(x, y, r, color){
     ctx.fill();
 }
 
-// listening to the mouse
+// Movimiento al raton
 canvas.addEventListener("mousemove", getMousePos);
 
 function getMousePos(evt){
@@ -82,7 +82,7 @@ function getMousePos(evt){
     user.y = evt.clientY - rect.top - user.height/2;
 }
 
-// when COM or USER scores, we reset the ball
+// Cuando ahi gol renicio
 function resetBall(){
     ball.x = canvas.width/2;
     ball.y = canvas.height/2;
@@ -90,21 +90,21 @@ function resetBall(){
     ball.speed = 7;
 }
 
-// draw the net
+// Pintar raya
 function drawNet(){
     for(let i = 0; i <= canvas.height; i+=15){
         drawRect(net.x, net.y + i, net.width, net.height, net.color);
     }
 }
 
-// draw text
+// Pintar texto
 function drawText(text,x,y){
     ctx.fillStyle = "#FFF";
     ctx.font = "75px fantasy";
     ctx.fillText(text, x, y);
 }
 
-// collision detection
+// Colision con raquetas
 function collision(b,p){
     p.top = p.y;
     p.bottom = p.y + p.height;
@@ -119,10 +119,10 @@ function collision(b,p){
     return p.left < b.right && p.top < b.bottom && p.right > b.left && p.bottom > b.top;
 }
 
-// update function, the function that does all calculations
+
 function update(){
     
-    // change the score of players, if the ball goes to the left "ball.x<0" computer win, else if "ball.x > canvas.width" the user win
+    // Cambiar marcador
     if( ball.x - ball.radius < 0 ){
         com.score++;
         comScore.play();
@@ -133,7 +133,7 @@ function update(){
         resetBall();
     }
     
-    // the ball has a velocity
+    // Velocidad bola
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
     
