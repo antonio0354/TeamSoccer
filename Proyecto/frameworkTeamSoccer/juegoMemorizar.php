@@ -25,13 +25,13 @@ and open the template in the editor.
                        float:left;
                        margin:10px;
                        padding:20px;
-                       font-size: 64px;
+                       font-size: 32px;
                        cursor:pointer;
                        text-align:center;
                    }
         </style>
         <script>
-            var array_memoria=['1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','8','9','9','1','10','10','11','11','12','12','13','13','14','14','15','15','16','16'];
+            var array_memoria=['1','1','2','2','3','3','4','4','5','5','6','6','7','7','8','8','9','9','10','10','11','11','12','12'];
             var valor_memoria=[];
             var memoria_carta_ids =[];
             var mirada_carta=0;
@@ -73,7 +73,7 @@ and open the template in the editor.
                             memoria_carta_ids= [];
                             //chekea si la mesa entera esta despejada
                             if(mirada_carta == array_memoria.length){
-                                alert("Terminaste Grandioso!!.... Generando Nueva Tabla");
+                                alert("Enhorabuena!!.... Generando Nueva Tabla");
                                 document.getElementById('table_memoria').innerHTML="";
                                 nuevaTabla();
                             }
