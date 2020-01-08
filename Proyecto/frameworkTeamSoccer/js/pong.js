@@ -205,7 +205,7 @@ function game(){
     render();
 
 }
-// number of frames per second
+
 let framePerSecond = 50;
 
 
