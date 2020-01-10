@@ -8,7 +8,6 @@ and open the template in the editor.
     <head>
         <?php include("includes/head-tag-contents.php"); ?>
         
-        <link rel="stylesheet" href="css/estilo-ahoracado.css">
     </head>
     <body>
 
@@ -33,7 +32,6 @@ and open the template in the editor.
                     <?php include("includes/footer.php"); ?>
                 </div>
             </footer>
-            <script src="ahorcado.js"></script>
 
         </div>
 

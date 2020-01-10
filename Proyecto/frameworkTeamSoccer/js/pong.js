@@ -137,67 +137,67 @@ function update(){
     ball.x += ball.velocityX;
     ball.y += ball.velocityY;
     
-    // computer plays for itself, and we must be able to beat it
-    // simple AI
+    // la computadora juega por sí misma, y ​​debemos ser capaces de vencerla
+    
     com.y += ((ball.y - (com.y + com.height/2)))*0.1;
     
-    // when the ball collides with bottom and top walls we inverse the y velocity.
+    // cuando la pelota choca con las paredes inferior y superior, invertimos la velocidad y.
     if(ball.y - ball.radius < 0 || ball.y + ball.radius > canvas.height){
         ball.velocityY = -ball.velocityY;
         wall.play();
     }
     
-    // we check if the paddle hit the user or the com paddle
+    // comprobamos si la paleta golpeó al usuario o la paleta com
     let player = (ball.x + ball.radius < canvas.width/2) ? user : com;
     
-    // if the ball hits a paddle
+    // si la pelota golpea una pala
     if(collision(ball,player)){
-        // play sound
+       
         hit.play();
-        // we check where the ball hits the paddle
+        // comprobamos donde la pelota golpea la pala
+
         let collidePoint = (ball.y - (player.y + player.height/2));
-        // normalize the value of collidePoint, we need to get numbers between -1 and 1.
-        // -player.height/2 < collide Point < player.height/2
+        // para normalizar el valor de collidePoint, necesitamos obtener números entre -1 y 1.
         collidePoint = collidePoint / (player.height/2);
         
-        // when the ball hits the top of a paddle we want the ball, to take a -45degees angle
-        // when the ball hits the center of the paddle we want the ball to take a 0degrees angle
-        // when the ball hits the bottom of the paddle we want the ball to take a 45degrees
+        // cuando la pelota golpea la parte superior de una pala, queremos que la pelota tome un ángulo de -45 grados
+        //cuando la pelota golpea el centro de la pala, queremos que la pelota tome un ángulo de 0 grados
+        // cuando la pelota toca el fondo de la pala, queremos que la pelota tome 45 grados
         // Math.PI/4 = 45degrees
         let angleRad = (Math.PI/4) * collidePoint;
         
-        // change the X and Y velocity direction
+        // cambio de de direccion X e Y cuando se golpea
         let direction = (ball.x + ball.radius < canvas.width/2) ? 1 : -1;
         ball.velocityX = direction * ball.speed * Math.cos(angleRad);
         ball.velocityY = ball.speed * Math.sin(angleRad);
         
-        // speed up the ball everytime a paddle hits it.
+        // subida de velocidad cada vez que se golpea la bola
         ball.speed += 0.1;
     }
 }
 
-// render function, the function that does al the drawing
+// función de render, la función que hace todo el dibujo
 function render(){
     
-    // clear the canvas
+    // limpiar el canvas
     drawRect(0, 0, canvas.width, canvas.height, "#000");
     
-    // draw the user score to the left
+    // dibujar el puntaje del usuario a la izquierda
     drawText(user.score,canvas.width/4,canvas.height/5);
     
-    // draw the COM score to the right
+    // dibujar el puntaje del COM a la derecha
     drawText(com.score,3*canvas.width/4,canvas.height/5);
     
-    // draw the net
+    // dibujar la raya
     drawNet();
     
-    // draw the user's paddle
+    // dibujar la paleta del usuario
     drawRect(user.x, user.y, user.width, user.height, user.color);
     
-    // draw the COM's paddle
+    //dibujar la paleta del COM
     drawRect(com.x, com.y, com.width, com.height, com.color);
     
-    // draw the ball
+    // dibujar la pelota
     drawArc(ball.x, ball.y, ball.radius, ball.color);
 }
 function game(){
@@ -205,7 +205,7 @@ function game(){
     render();
 
 }
-
+// nuemro de frames por segundo
 let framePerSecond = 50;
 
 
