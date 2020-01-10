@@ -178,10 +178,12 @@ function update(){
 
 // función de render, la función que hace todo el dibujo
 function render(){
-    
+    var img = new Image();
+    img.src = "imagenes/campoFutbol.png";
     // limpiar el canvas
-    drawRect(0, 0, canvas.width, canvas.height, "#000");
-    
+    //drawRect(0, 0, canvas.width, canvas.height, img);
+    ctx.drawImage(img,0,0,canvas.width,canvas.height);
+
     // dibujar el puntaje del usuario a la izquierda
     drawText(user.score,canvas.width/4,canvas.height/5);
     
