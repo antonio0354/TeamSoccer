@@ -27,5 +27,14 @@
             </div>
         </div> 
     </div>
+ <div col-sm-4>
+        <div class="hovereffect">
+            <img class="img-fluid" src="imagenes/fondo3enraya.png" alt="">
+            <div class="overlay">
+                <h2>Juego 4</h2>
+                <a class="info" href="3enraya.php">link here</a>
+            </div>
+        </div> 
+    </div>
     
     
