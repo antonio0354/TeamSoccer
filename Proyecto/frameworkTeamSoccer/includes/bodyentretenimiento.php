@@ -13,7 +13,7 @@
         <div class="hovereffect">
             <img class="img-fluid" src="imagenes/juegoMemorizar.png" alt="">
             <div class="overlay">
-                <h2>Juego Antonio Rodriguez</h2>
+                <h2>Juego Antonio J.Rodriguez</h2>
                 <a class="info" href="memorizar.php">Haz click aquí</a>
             </div>
         </div> 
