@@ -53,11 +53,11 @@
         </div>
         
         <div class="col-sm-6">
-            <div class="row ml-auto">
+            <div class="row ml-4">
                 <img src="imagenes/whatsapp.png" height="50px" width="50px"/> 123456789 
             </div>
 
-            <div class="row ml-auto">
+            <div class="row ml-4">
                 <img src="imagenes/gmail.png" height="50px" width="50px"/> teamsoccer@gmail.com
             </div>
         </div>
