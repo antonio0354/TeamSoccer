@@ -1,10 +1,30 @@
 <div class="col-sm-8">
+    <link rel="stylesheet" href="css/video.css">
+    <script src="js/script.js"></script>
     <div class="row">
         <div class="col-sm-6">
-            <div class="embed-responsive embed-responsive-16by9">
-<iframe class="m-3 w-100 embed-responsive-item" src="https://www.youtube.com/embed/WQQouW8ky1w" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="embed-responsive embed-responsive-16by9 mt-3 ml-3">
+                <div id="video-container">
+                    <video id="video" >
+
+                        <source src="videos/video2.mp4" type="video/mp4">
+                        <p>
+                            Your browser doesn't support HTML5 video.
+                            <a href="videos/video2.mp4">Download</a> the video instead.
+                        </p>
+                    </video>
+                    <div id="video-controls" class="videoEL">
+                        <button type="button" id="play-pause" class="play">Play</button>
+                        <input type="range" id="seek-bar" value="0">
+                        <button type="button" id="mute">Mute</button>
+                        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                        <button type="button" id="full-screen">Full-Screen</button>
+
+                    </div>
+
+                </div>            
             </div>
-            </div> 
+        </div> 
         <div class="col-sm-6">
             <img  class="m-3 w-100" src="imagenes/munir.jpg">
         </div> 

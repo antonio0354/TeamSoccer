@@ -1,6 +1,8 @@
 
-
 <div class="col-sm-8">
+
+    <link rel="stylesheet" href="css/video.css">
+    <script src="js/script.js"></script>
     <div class="row">
         <div class="col-sm-6 ">
             <div id="demo1" class="col-sm-12 carousel slide justify-content-center" data-ride="carousel">
@@ -132,17 +134,56 @@
     </div>
     <div class="row">
         <div class="col-sm-6 ">
-           <div class="embed-responsive embed-responsive-16by9 border border-primary">
-            <iframe  src="https://www.youtube.com/embed/nAhclOK-22E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
-           </div>
-             <h4> Mejores goles champions 2018/2019</h4>
+            <div class="embed-responsive embed-responsive-16by9 border border-primary">
+                <div id="video-container">
+                    <video id="video" >
+
+                        <source src="videos/video1.mp4" type="video/mp4">
+                        <p>
+                            Your browser doesn't support HTML5 video.
+                            <a href="videos/video1.mp4">Download</a> the video instead.
+                        </p>
+                    </video>
+                    <div id="video-controls" class="videoChampions">
+                        <button type="button" id="play-pause" class="play">Play</button>
+                        <input type="range" id="seek-bar" value="0">
+                        <button type="button" id="mute">Mute</button>
+                        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                        <button type="button" id="full-screen">Full-Screen</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <h4> Mejores goles champions 2018/2019</h4>
         </div>
         <div class="col-sm-6 ">
             <div class="embed-responsive embed-responsive-16by9 border border-primary">
-                <iframe  src="https://www.youtube.com/embed/X3Zs-HZczUM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>             </div>
-       <h4> Video UEFA Champions League 2018/2019</h4>
+                <div id="video-container">
+                    <video id="video" >
+
+                        <source src="videos/video1.mp4" type="video/mp4">
+                        <p>
+                            Your browser doesn't support HTML5 video.
+                            <a href="videos/video1.mp4">Download</a> the video instead.
+                        </p>
+                    </video>
+                    <div id="video-controls" class="videoChampions">
+                        <button type="button" id="play-pause" class="play">Play</button>
+                        <input type="range" id="seek-bar" value="0">
+                        <button type="button" id="mute">Mute</button>
+                        <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
+                        <button type="button" id="full-screen">Full-Screen</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <h4> Video UEFA Champions League 2018/2019</h4>
         </div>
-        
     </div>
 </div>
 <div class="col-sm-4 table-responsive">
@@ -263,4 +304,5 @@
         </tbody>
     </table>
 </div>
+
 
