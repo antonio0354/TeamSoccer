@@ -42,93 +42,101 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="entretenimiento.php" style="white-space: nowrap ">
-                           Entretenimiento</a>
+                            Entretenimiento</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link" href="contacto.php" style="white-space: nowrap ">Contacto</a>
                     </li>
                     <li class="nav-item ml-4">
                         <a class="nav-link"  style="color: white;" href="registro.php"><span
-                    class="glyphicon glyphicon-user"></span>Registrar</a>
-                      
+                                class="glyphicon glyphicon-user"></span>Registrar</a>
+
                     </li>
                     <li class="nav-item">
                         <a class="nav-link"  style="color: white;" href="acceso.php">
                             Acceder</a>
                     </li>
-                    
+
 
                 </ul>
 
 
 
             </div>
-                <div class="container">
+            <div class="container">
 
-        <a class="navbar-brand" href="#">
-        </a>
-        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-            &#9776;
-        </button>
-        <div class="collapse navbar-collapse" id="exCollapsingNavbar">
-           
-            <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
-                <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li>
-                <li id="dropdownLoginLI" class="dropdown order-1">
-                    <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle ">Login <span class="caret"></span></button>
-                    <ul class="dropdown-menu dropdown-menu-right mt-2">
-                       <li class="px-3 py-2">
-                           <form class="form" role="form" method="post">
-                                <div class="form-group">
-                                    <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="" name="email">
-                                </div>
-                                <div class="form-group">
-                                    <input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="text" required="" name="contra">
-                                </div>
-                                <div class="form-group">
-                                    <input type="submit" class="btn btn-primary btn-block" value="Login"></input>
-                                </div>
-                                <div class="text-center">
-                                    <small>or</small>
-                                </div>
+                <a class="navbar-brand" href="#">
+                </a>
+                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+                    &#9776;
+                </button>
+                <div class="collapse navbar-collapse" id="exCollapsingNavbar">
 
-                                <div class="form-group">
-                                    <button id="googleSignInBtn" class="btn-google">SIGN IN WITH GOOGLE</button>
-                                </div>
-                               
-                                <div class="form-group text-center">
-                                    <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
-                                </div>
-                            </form>
+                    <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
+                        <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li>
+                        <li id="dropdownLoginLI" class="dropdown order-1">
+                            <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle ">Login <span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right mt-2">
+                                <li class="px-3 py-2">
+                                    <form class="form" role="form" method="post">
+                                        <div class="form-group">
+                                            <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="" name="email">
+                                        </div>
+                                        <div class="form-group">
+                                            <input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="text" required="" name="contra">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="submit" class="btn btn-primary btn-block" value="Login" name="boton"></input>
+                                        </div>
+                                        <div class="text-center">
+                                            <small>or</small>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <button id="googleSignInBtn" class="btn-google">SIGN IN WITH GOOGLE</button>
+                                        </div>
+
+                                        <div class="form-group text-center">
+                                            <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
+                                        </div>
+                                    </form>
+                                </li>
+                            </ul>
                         </li>
-                    </ul>
-                </li>
-                <li id="dropdownLogoutLI" class="dropdown order-1" style="display:none;">
-                    <button type="button" id="dropdownLogoutMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Name: <span class="caret"></span></button>
-                    <ul class="dropdown-menu dropdown-menu-right mt-2">
-                       <li class="px-3 py-2">
-                           <form class="form" role="form">
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-primary btn-block">Edit profile</button>
-                                </div>
-                                <div class="text-center">
-                                    <small>or</small>
-                                </div>
+                        <li id="dropdownLogoutLI" class="dropdown order-1" style="display:none;">
+                            <button type="button" id="dropdownLogoutMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Name: <span class="caret"></span></button>
+                            <ul class="dropdown-menu dropdown-menu-right mt-2">
+                                <li class="px-3 py-2">
+                                    <form class="form" role="form">
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-block">Edit profile</button>
+                                        </div>
+                                        <div class="text-center">
+                                            <small>or</small>
+                                        </div>
 
-                                <div class="form-group">
-                                    <button id="googleSignoutBtn" onclick="signOut()" class="btn-google">SIGN OUT</button>
-                                </div>
-                               
-                            </form>
+                                        <div class="form-group">
+                                            <button id="googleSignoutBtn" onclick="signOut()" class="btn-google">SIGN OUT</button>
+                                        </div>
+
+                                    </form>
+                                </li>
+                            </ul>
                         </li>
+
+                        <?php
+                        require_once 'Login.php';
+                        if (isset($_POST['boton'])) {
+                            Login::comprobarUsuario($_POST['email'], $_POST['contra']);
+                            session_start();
+                             
+                            
+                        }
+                        ?>
+
                     </ul>
-                </li>
-                
-                
-                
-            </ul>
-        </div>
-    </div>
+                </div>
+            </div>
 
         </div>
     </nav>
