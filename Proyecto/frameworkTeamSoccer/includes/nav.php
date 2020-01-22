@@ -78,16 +78,26 @@
                             <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle ">Login <span class="caret"></span></button>
                             <ul class="dropdown-menu dropdown-menu-right mt-2">
                                 <li class="px-3 py-2">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div>
+                                                <img src="iconos/usuario.png">
+                                            </div>
+                                            <div>
+                                                <h4>Log In</h4>
+                                            </div>
+
+                                            <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#formularioModal">
+                                                Haz click para iniciar sesión
+                                            </button>
+
+                                            
+
+
+                                        </div>
+                                    </div>
                                     <form class="form" role="form" method="post">
-                                        <div class="form-group">
-                                            <input id="emailInput" placeholder="Email" class="form-control form-control-sm" type="text" required="" name="email">
-                                        </div>
-                                        <div class="form-group">
-                                            <input id="passwordInput" placeholder="Password" class="form-control form-control-sm" type="text" required="" name="contra">
-                                        </div>
-                                        <div class="form-group">
-                                            <input type="submit" class="btn btn-primary btn-block" value="Login" name="boton"></input>
-                                        </div>
+
                                         <div class="text-center">
                                             <small>or</small>
                                         </div>
@@ -123,23 +133,74 @@
                                 </li>
                             </ul>
                         </li>
-
+                        <script>startApp();</script>
                         <?php
                         require_once 'Login.php';
                         if (isset($_POST['boton'])) {
                             Login::comprobarUsuario($_POST['email'], $_POST['contra']);
                             session_start();
-                             
-                            
                         }
                         ?>
 
                     </ul>
+                    <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3>Forgot password</h3>
+                                    <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Reset your password..</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                    <button class="btn btn-primary">Save changes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
     </nav>
+    <div class="modal fade" id="formularioModal" role="dialog">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <div class="modal-header">
+                                                            <img src="iconos/usuario.png">
+                                                            <button type="button" class="close" data-dismiss="modal">
+                                                                <span aria-hidden="true">X</span>
+                                                            </button>
+                                                        </div>
+
+
+                                                        <div class="modal-body">
+                                                            <p class="statusMsg"></p>
+                                                            <form role="form">
+                                                                <div class="form-group">
+                                                                    <label for="inputEmail">Email</label>
+                                                                    <input type="email" class="form-control" id="inputEmail" placeholder="Introduce tu correo"/>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <label for="inputContrasena">Contraseña</label>
+                                                                    <input type="password" class="form-control" id="inputContrasena" placeholder="Introduce tu contraseña"/>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+
+                                                        <div class="modal-footer">
+                                                            <a href="#">Olvidé la contraseña</a>
+                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                                                            <button type="button" class="btn btn-primary submitBtn">Acceder</button>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
 
 
