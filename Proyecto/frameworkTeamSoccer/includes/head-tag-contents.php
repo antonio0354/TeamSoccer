@@ -18,6 +18,8 @@
   <script type="text/javascript" src="js/google-signin.js"></script>
 <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   
   <link rel="stylesheet" href="css/style.css">
 

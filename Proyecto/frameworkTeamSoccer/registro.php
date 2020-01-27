@@ -1,3 +1,4 @@
+<?php session_start();?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -16,6 +17,7 @@
             </header>
             <main>
                 <div class="row text-center">
+                    
                     <?php include("includes/bodyRegistro.php"); ?>
                 </div>
             </main>

@@ -10,7 +10,7 @@
                         <h4>Sign Up</h4>
                     </div>
                     <div class="login-form mt-4">
-                        <form>
+                        <form action="" method="POST">
                             <div class="form-row">
                                 <div class="form-group col-md-12">
                                     <input name="nombre" placeholder="Nombre" class="form-control" type="text">
@@ -24,6 +24,23 @@
                                 <div class="form-group col-md-12">
                                     <input type="password" class="form-control"  placeholder="Repetir contraseña">
                                 </div>
+                                <div class="mx-auto">
+  <input type="text" name="captcha" id="captcha" maxlength="6" size="6"/>
+  <img src="captcha.php"/><br>
+
+                           
+                              <?php if (isset($_POST['submit'])) {
+    if ($_POST['captcha'] == $_SESSION['cap_code']) {
+        // Captcha verification is Correct. Do something here!
+        echo '<p>El captcha introducido es correcto</p>';
+    }
+    else {
+        // Captcha verification is wrong. Take other action
+        echo '<p>El captcha introducido no es correcto</p>';
+    }
+}
+?>
+   </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group">
@@ -38,7 +55,7 @@
                             </div>                        
 
                             <div class="form-row">
-                                <button type="button" class="btn btn-danger btn-block">Enviar</button>
+                                <input type="submit" class="btn btn-danger btn-block" name="submit" value="Enviar">
                             </div>
                         </form>
                     </div>
@@ -50,3 +67,4 @@
         </div>
     </div>
 </div>
+
