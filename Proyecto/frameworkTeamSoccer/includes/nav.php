@@ -52,29 +52,18 @@
                                 class="glyphicon glyphicon-user"></span>Registrar</a>
 
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link"  style="color: white;" href="acceso.php">
-                            Acceder</a>
-                    </li>
+                    
 
 
-                </ul>
+                
 
 
 
-            </div>
-            <div class="container">
-
-                <a class="navbar-brand" href="#">
-                </a>
-                <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
-                    &#9776;
-                </button>
-                <div class="collapse navbar-collapse" id="exCollapsingNavbar">
-
-                    <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
-                        <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"><i class="fa fa-cog fa-fw fa-lg"></i></a></li>
-                        <li id="dropdownLoginLI" class="dropdown order-1">
+           
+       
+                
+               
+                        <li id="dropdownLoginLI" class="nav-item ml-4">
                             <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle ">Login <span class="caret"></span></button>
                             <ul class="dropdown-menu dropdown-menu-right mt-2">
                                 <li class="px-3 py-2">
@@ -103,7 +92,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <button id="googleSignInBtn" class="btn-google">SIGN IN WITH GOOGLE</button>
+                                            <submit id="googleSignInBtn" class="btn-google">SIGN IN WITH GOOGLE</submit>
                                         </div>
 
                                         <div class="form-group text-center">
@@ -113,13 +102,13 @@
                                 </li>
                             </ul>
                         </li>
-                        <li id="dropdownLogoutLI" class="dropdown order-1" style="display:none;">
+                        <li id="dropdownLogoutLI" class="nav-item" style="display:none;">
                             <button type="button" id="dropdownLogoutMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Name: <span class="caret"></span></button>
                             <ul class="dropdown-menu dropdown-menu-right mt-2">
                                 <li class="px-3 py-2">
                                     <form class="form" role="form">
                                         <div class="form-group">
-                                            <button type="submit" class="btn btn-primary btn-block">Edit profile</button>
+                                            <button  type="submit"  class="dropdown-item btn btn-primary btn-block"><a href="editarperfil.php">Edit profile</a></button>
                                         </div>
                                         <div class="text-center">
                                             <small>or</small>
@@ -132,6 +121,8 @@
                                     </form>
                                 </li>
                             </ul>
+                            </ul>
+                            
                         </li>
                         <script>startApp();</script>
                         <?php
@@ -160,10 +151,11 @@
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+               
+         
 
         </div>
+             </div>
     </nav>
     <div class="modal fade" id="formularioModal" role="dialog">
                                                 <div class="modal-dialog">
