@@ -1,3 +1,124 @@
+
+p {
+  font-weight: 100;
+  font-size: 14px;
+  margin-bottom: -25px;
+  margin-top: -10px;
+  padding: -0px;
+}
+h1 {
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+/*   font-style: italic; */
+}
+
+.contenedor {
+  padding: 0;
+  margin: 10px auto;
+  width: 300px;
+  height: 950px;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.boton {
+  
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+button{
+  border:0;
+}
+#shadow {
+  position: relative;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+}
+.imagen {
+  background-image: url("https://www.artbybagci.com/wp-content/uploads/2017/05/darth-clean.jpg");
+  background-position: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  opacity: 1;
+  animation-name: aparecer-imagen;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  transition: all 4s ease-in-out;
+  transform: translatey(0);
+  overflow: hidden;
+}
+
+.formulario {
+  background-image: linear-gradient(
+    to top,
+    rgba(195, 118, 249, 0.9),
+    rgba(123, 237, 209, 0.9)
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 40px;
+  width: 300px;
+  height: 650px;
+  border-radius: 10px;
+  opacity: 1;
+  animation-name: aparecer;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+.content {
+  opacity: 1;
+  animation-name: move;
+  animation-delay: 3s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 3s;
+}
+.content img {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  opacity: 1;
+  animation-name: imagen;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-duration: 1.5s;
+  transform: translatey(-10px);
+}
+@keyframes aparecer-imagen {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes move {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .btn-google {
   display: inline-block;
   color: white;

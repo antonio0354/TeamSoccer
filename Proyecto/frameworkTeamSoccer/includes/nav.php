@@ -1,4 +1,7 @@
+<?php
+session_start();
 
+?>
 
 <div class="col-sm-12 mb-3 rounded shadow bg-danger p-0 mt-3">
 
@@ -52,149 +55,168 @@
                                 class="glyphicon glyphicon-user"></span>Registrar</a>
 
                     </li>
-                    
 
 
-                
+                    <li id="dropdownLoginLI" class="nav-item ml-4">
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle ">Login <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right mt-2">
+                            <li class="px-3 py-2">
+                                  <div class="card">
+                                    <div class="card-body">
+                                        <?php
+                                        if (!isset($_SESSION['email'])) {
+                                            ?>
+                                            <div>
+                                                  <center><img src="iconos/usuario.png"></center>
+                                            </div>
+                                            <div>
+                                                <center>  <h4>Log In</h4></center>
+                                            </div>
 
-
-
-           
-       
-                
-               
-                        <li id="dropdownLoginLI" class="nav-item ml-4">
-                            <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle ">Login <span class="caret"></span></button>
-                            <ul class="dropdown-menu dropdown-menu-right mt-2">
-                                <li class="px-3 py-2">
-                                    <div class="card">
-                                        <div class="card-body">
+                                           <center> <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#formularioModal">
+                                                Haz click para iniciar sesión
+                                               </button></center>
+                                            <?php
+                                        } else {
+                                            ?>
                                             <div>
                                                 <img src="iconos/usuario.png">
                                             </div>
                                             <div>
-                                                <h4>Log In</h4>
+                                                <a href=""><?php echo $_SESSION['email']?></a><br>
+                                                <a href="editarperfil.php">Mi Perfil</a>
+                                                <a href="cerrar_sesion.php">Cerrar Sesion</a>
                                             </div>
-
-                                            <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#formularioModal">
-                                                Haz click para iniciar sesión
-                                            </button>
-
-                                            
+                                            <?php
+                                        }
+                                        ?>
 
 
-                                        </div>
+
+
+
                                     </div>
-                                    <form class="form" role="form" method="post">
-
-                                        <div class="text-center">
-                                            <small>or</small>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <submit id="googleSignInBtn" class="btn-google">SIGN IN WITH GOOGLE</submit>
-                                        </div>
-
-                                        <div class="form-group text-center">
-                                            <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
-                                        </div>
-                                    </form>
-                                </li>
-                            </ul>
-                        </li>
-                        <li id="dropdownLogoutLI" class="nav-item" style="display:none;">
-                            <button type="button" id="dropdownLogoutMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Name: <span class="caret"></span></button>
-                            <ul class="dropdown-menu dropdown-menu-right mt-2">
-                                <li class="px-3 py-2">
-                                    <form class="form" role="form">
-                                        <div class="form-group">
-                                            <button  type="submit"  class="dropdown-item btn btn-primary btn-block"><a href="editarperfil.php">Edit profile</a></button>
-                                        </div>
-                                        <div class="text-center">
-                                            <small>or</small>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <button id="googleSignoutBtn" onclick="signOut()" class="btn-google">SIGN OUT</button>
-                                        </div>
-
-                                    </form>
-                                </li>
-                            </ul>
-                            </ul>
-                            
-                        </li>
-                        <script>startApp();</script>
-                        <?php
-                        require_once 'Login.php';
-                        if (isset($_POST['boton'])) {
-                            Login::comprobarUsuario($_POST['email'], $_POST['contra']);
-                            session_start();
-                        }
-                        ?>
-
-                    </ul>
-                    <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h3>Forgot password</h3>
-                                    <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
                                 </div>
-                                <div class="modal-body">
-                                    <p>Reset your password..</p>
-                                </div>
-                                <div class="modal-footer">
-                                    <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
-                                    <button class="btn btn-primary">Save changes</button>
-                                </div>
+                                <?php if (!isset($_SESSION['email'])) { ?>
+                                <form class="form" role="form" method="post">
+
+                                    <div class="text-center">
+                                        <small>or</small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <center><submit id="googleSignInBtn" class="btn-google" >SIGN IN WITH GOOGLE</submit></center>
+                                    </div>
+
+                                    <div class="form-group text-center">
+                                        <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
+                                    </div>
+                                </form>
+                                <?php } ?>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="dropdownLogoutLI" class="nav-item" style="display:none;">
+                        <button type="button" id="dropdownLogoutMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Name: <span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right mt-2">
+                            <li class="px-3 py-2">
+                                <form class="form" role="form">
+                                    <div class="form-group">
+                                        <button  type="submit"  class="dropdown-item btn btn-primary btn-block"><a href="editarperfil.php">Edit profile</a></button>
+                                    </div>
+                                    <div class="text-center">
+                                        <small>or</small>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <button id="googleSignoutBtn" onclick="signOut()" class="btn-google">SIGN OUT</button>
+                                    </div>
+
+                                </form>
+                            </li>
+                        </ul>
+                </ul>
+
+                </li>
+                <script>startApp();</script>
+               
+                </ul>
+                <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h3>Forgot password</h3>
+                                <button type="button" class="close font-weight-light" data-dismiss="modal" aria-hidden="true">×</button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Reset your password..</p>
+                            </div>
+                            <div class="modal-footer">
+                                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+                                <button class="btn btn-primary">Save changes</button>
                             </div>
                         </div>
                     </div>
-               
-         
+                </div>
 
+
+
+            </div>
         </div>
-             </div>
     </nav>
     <div class="modal fade" id="formularioModal" role="dialog">
-                                                <div class="modal-dialog">
-                                                    <div class="modal-content">
+        <div class="modal-dialog">
+            <div class="modal-content">
 
-                                                        <div class="modal-header">
-                                                            <img src="iconos/usuario.png">
-                                                            <button type="button" class="close" data-dismiss="modal">
-                                                                <span aria-hidden="true">X</span>
-                                                            </button>
-                                                        </div>
-
-
-                                                        <div class="modal-body">
-                                                            <p class="statusMsg"></p>
-                                                            <form role="form">
-                                                                <div class="form-group">
-                                                                    <label for="inputEmail">Email</label>
-                                                                    <input type="email" class="form-control" id="inputEmail" placeholder="Introduce tu correo"/>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                    <label for="inputContrasena">Contraseña</label>
-                                                                    <input type="password" class="form-control" id="inputContrasena" placeholder="Introduce tu contraseña"/>
-                                                                </div>
-                                                            </form>
-                                                        </div>
+                <div class="modal-header">
+                    <img src="iconos/usuario.png">
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span aria-hidden="true">X</span>
+                    </button>
+                </div>
 
 
-                                                        <div class="modal-footer">
-                                                            <a href="#">Olvidé la contraseña</a>
-                                                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                                            <button type="button" class="btn btn-primary submitBtn">Acceder</button>
+                <div class="modal-body">
+                    <p class="statusMsg"></p>
+                    <form role="form" method="post">
+                        <div class="form-group">
+                            <label for="inputEmail">Email</label>
+                            <input type="email" class="form-control" id="inputEmail" name="em" placeholder="Introduce tu correo"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="inputContrasena">Contraseña</label>
+                            <input type="password" class="form-control" id="inputContrasena" name="contra" placeholder="Introduce tu contraseña"/>
+                        </div>
 
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                        <div class="modal-footer">
+                            <a href="#">Olvidé la contraseña</a>
+
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+                            <input type="submit" class="btn btn-primary submitBtn" name="boton" value="Acceder">
+
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 
 
 </div>
+<?php 
+require_once 'Conexion.php';
+$conex = new Conexion();
+if (isset($_POST['boton'])) {
+    $consulta = $conex->query("Select  email, contrasena from usuario where email='$_POST[em]' && contrasena='$_POST[contra]'");
+    if ($conex->affected_rows > 0) {
+             
+        $_SESSION['email'] = $_POST[em];
+        $_SESSION['contrasena'] = $_POST[contra];
+    } else {
+        echo 'Usuario o contraseña imncorrectos';
+    }
+}
+?>
