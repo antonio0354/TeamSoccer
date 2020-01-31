@@ -12,8 +12,8 @@
             </div>
 
         </div>
- <link rel="stylesheet" href="css/video.css">
-    <script src="js/script.js"></script>
+
+    
         <div class="col embed-responsive embed-responsive-16by9">
             <div id="video-container">
                 <video id="video" >

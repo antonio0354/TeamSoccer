@@ -1,6 +1,21 @@
 <?php
 session_start();
 
+
+require_once 'Conexion.php';
+$conex = new Conexion();
+if (isset($_POST['boton'])) {
+    $consulta = $conex->query("Select  email, password from usuario where email='$_POST[em]' && password='$_POST[contra]'");
+    if ($conex->affected_rows > 0) {
+             
+        @$_SESSION['email'] = $_POST[em];
+        @$_SESSION['contrasena'] = $_POST[contra];
+        
+    } else {
+        echo 'Usuario o contraseña imncorrectos';
+    }
+   
+}
 ?>
 
 <div class="col-sm-12 mb-3 rounded shadow bg-danger p-0 mt-3">
@@ -58,7 +73,7 @@ session_start();
 
 
                     <li id="dropdownLoginLI" class="nav-item ml-4">
-                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle ">Login <span class="caret"></span></button>
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle "><?php if(isset($_SESSION['email'])) { echo $_SESSION['email']; }else echo 'Login';?> <span class="caret"></span></button>
                         <ul class="dropdown-menu dropdown-menu-right mt-2">
                             <li class="px-3 py-2">
                                   <div class="card">
@@ -84,7 +99,8 @@ session_start();
                                             </div>
                                             <div>
                                                 <a href=""><?php echo $_SESSION['email']?></a><br>
-                                                <a href="editarperfil.php">Mi Perfil</a>
+                                                <hr>
+                                                <a href="editarperfil.php">Mi Perfil</a><br>
                                                 <a href="cerrar_sesion.php">Cerrar Sesion</a>
                                             </div>
                                             <?php
@@ -206,17 +222,3 @@ session_start();
 
 
 </div>
-<?php 
-require_once 'Conexion.php';
-$conex = new Conexion();
-if (isset($_POST['boton'])) {
-    $consulta = $conex->query("Select  email, contrasena from usuario where email='$_POST[em]' && contrasena='$_POST[contra]'");
-    if ($conex->affected_rows > 0) {
-             
-        $_SESSION['email'] = $_POST[em];
-        $_SESSION['contrasena'] = $_POST[contra];
-    } else {
-        echo 'Usuario o contraseña imncorrectos';
-    }
-}
-?>

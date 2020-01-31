@@ -1,7 +1,7 @@
 
 <div class="col-sm-8">
 
-    <link rel="stylesheet" href="css/video.css">
+    
     <script src="js/script.js"></script>
     <div class="row">
         <div class="col-sm-6 ">
