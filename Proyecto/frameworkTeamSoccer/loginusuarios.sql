@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 31-01-2020 a las 14:25:15
--- Versión del servidor: 10.4.6-MariaDB
--- Versión de PHP: 7.3.9
+-- Tiempo de generación: 04-02-2020 a las 10:26:11
+-- Versión del servidor: 10.4.8-MariaDB
+-- Versión de PHP: 7.3.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -31,10 +31,20 @@ SET time_zone = "+00:00";
 CREATE TABLE `contenido` (
   `id` int(11) NOT NULL,
   `titulo` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `fecha_publicacion` date NOT NULL,
+  `fecha_publicacion` date NOT NULL DEFAULT current_timestamp(),
   `texto` text COLLATE utf8_spanish_ci NOT NULL,
   `imagen` varchar(200) COLLATE utf8_spanish_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `contenido`
+--
+
+INSERT INTO `contenido` (`id`, `titulo`, `fecha_publicacion`, `texto`, `imagen`) VALUES
+(1, 'Campo De Futbol Lucena', '2020-01-31', 'El nuevo campo de fútbol del Lucena que ilusiona a los aficionados', 'imagenes/campoFutbol.png'),
+(2, '', '2020-02-03', 'José Mourinho nuevo entrenador del Tottenham', 'imagenes/mourinho.png'),
+(3, 'Titulo', '2020-02-03', 'Esto es una nueva noticia', 'imagenes/brujas.png'),
+(4, 'titulo', '0000-00-00', 'texto', 'imagenes/brujas.png');
 
 -- --------------------------------------------------------
 
@@ -64,7 +74,7 @@ CREATE TABLE `usuario` (
 INSERT INTO `usuario` (`id`, `nombre_usuario`, `password`, `nombre`, `apellido1`, `apellido2`, `email`, `fecha_nacimiento`, `pais`, `codigo_postal`, `telefono`, `rol`) VALUES
 (2, 'jesududu', '1234', 'Usuario', 'usuario1', NULL, 'jesus@gmail.com', '2020-01-02', 'España', 14800, 123456789, 'valorador'),
 (3, 'erniquedudu', '1234', 'asdf', 'asdf', '', 'enrique@gmail.com', '2020-01-03', 'asdf', 123, 123, 'valorador'),
-(4, 'antoniodudu', '1234', 'hhh', 'hhh', 'fgh', 'antonio@gmail.com', '2020-01-04', 'jjj', 3456, 345646, 'valorador');
+(4, 'antoniodudu', '1234', 'hhh', 'hhh', 'fgh', 'antonio@gmail.com', '2020-01-04', 'jjj', 3456, 345646, 'editor');
 
 -- --------------------------------------------------------
 
@@ -112,7 +122,7 @@ ALTER TABLE `valoracion`
 -- AUTO_INCREMENT de la tabla `contenido`
 --
 ALTER TABLE `contenido`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT de la tabla `usuario`
