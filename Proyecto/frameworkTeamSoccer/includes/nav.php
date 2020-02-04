@@ -5,14 +5,17 @@ session_start();
 require_once 'Conexion.php';
 $conex = new Conexion();
 if (isset($_POST['boton'])) {
-    $consulta = $conex->query("Select  email, password from usuario where email='$_POST[em]' && password='$_POST[contra]'");
+    $consulta = $conex->query("Select  rol,email, password from usuario where email='$_POST[em]' && password='$_POST[contra]'");
+    $object=$consulta->fetch_object();
     if ($conex->affected_rows > 0) {
              
         @$_SESSION['email'] = $_POST[em];
         @$_SESSION['contrasena'] = $_POST[contra];
+        @$_SESSION['rol'] = $object->rol;
+
         
     } else {
-        echo 'Usuario o contraseña imncorrectos';
+        echo 'Usuario o contraseña incorrectos';
     }
    
 }

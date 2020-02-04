@@ -20,5 +20,16 @@ $consulta = $conex->query("Select * from contenido ");
 
         <?php
     }
+    
+    if(isset($_SESSION['rol'])){
+       if($_SESSION['rol']=='editor'){
+        ?>
+    <form action="nuevaNoticia.php" method="post">
+        <input type="submit" name="addNoticia" value="Añadir Noticia">
+    </form>
+        <?php
+    } 
+    }
+    
     ?>
 
