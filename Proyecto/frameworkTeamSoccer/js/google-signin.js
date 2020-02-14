@@ -31,7 +31,7 @@ var signinChanged = function (val) {
     console.log('Given Name: ' + profile.getGivenName());
     console.log('Family Name: ' + profile.getFamilyName());
     console.log('Image URL: ' + profile.getImageUrl());
-    console.log('Email: ' + profile.getEmail());
+    console.log('Email: ' + profile.getEmail);
     document.getElementById('dropdownLogoutMenu1').innerHTML= auth2.currentUser.get().getBasicProfile().getName();
     document.getElementById('dropdownLoginLI').style.display = 'none';
     document.getElementById('dropdownLogoutLI').style.display = 'block';
@@ -42,6 +42,7 @@ var signinChanged = function (val) {
     document.getElementById('dropdownLoginLI').style.display = 'block';
   }
 }
+
 
 function signOut() {
     console.log("Logout");

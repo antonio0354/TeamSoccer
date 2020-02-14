@@ -24,5 +24,7 @@
   
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/video.css">
+  <link rel="stylesheet" href="css/cookiealert.css"> 
+
 
   

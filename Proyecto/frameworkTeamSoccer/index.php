@@ -23,8 +23,9 @@
                 <div class="row">
                     <?php include("includes/footer.php"); ?>
                 </div>
+                <?php include("includes/cookie.php"); ?>
             </footer>
-
+            
         </div>
 
 
