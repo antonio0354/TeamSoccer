@@ -6,9 +6,11 @@ session_start();
 require_once 'Conexion.php';
 $conex = new Conexion();
 if (isset($_POST['boton'])) {
-    $consulta = $conex->query("Select  rol,email, password from usuario where email='$_POST[em]' && password='$_POST[contra]'");
+    $consulta = $conex->query("Select * from usuario where email='$_POST[em]' && password='$_POST[contra]'");
     $object = $consulta->fetch_object();
     if ($conex->affected_rows > 0) {
+        @$_SESSION['idusuario'] = $object->id;
+        
         @$_SESSION['email'] = $_POST[em];
         @$_SESSION['contrasena'] = $_POST[contra];
         @$_SESSION['rol'] = $object->rol;
@@ -152,7 +154,7 @@ if (!isset($_SESSION['email'])) {
                         <button type="button" id="dropdownLogoutMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Name: <span class="caret"></span></button>
                         <ul class="dropdown-menu dropdown-menu-right mt-2">
                             <li class="px-3 py-2">
-                                <form class="form" role="form">
+                                <!--<form class="form" role="form">-->
                                     <div class="form-group">
                                         <button  type="submit"  class="dropdown-item btn btn-primary btn-block"><a href="editarperfil.php">Edit profile</a></button>
                                     </div>
@@ -164,7 +166,7 @@ if (!isset($_SESSION['email'])) {
                                         <button id="googleSignoutBtn" onclick="signOut()" class="btn-google">SIGN OUT</button>
                                     </div>
 
-                                </form>
+                                <!--</form>-->
                             </li>
                         </ul>
                 </ul>
@@ -236,10 +238,7 @@ if (!isset($_SESSION['email'])) {
             </div>
         </div>
     </div>
-
-
-
-
+   
 </div>
 
     

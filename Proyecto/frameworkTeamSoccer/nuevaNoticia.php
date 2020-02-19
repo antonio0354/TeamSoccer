@@ -1,13 +1,12 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
     <head>
         <?php include("includes/head-tag-contents.php"); ?>
-    
     </head>
     <body>
+
         <div class="container">
             <header>
-
                 <div class="row">
                     <?php include("includes/design-top.php"); ?>
                 </div>
@@ -16,9 +15,8 @@
                 </div>
             </header>
             <main>
-                <div class="row text-center">
-
-                    <?php include("includes/bodyRegistro.php"); ?>
+                <div class="row">
+                    <?php include("includes/bodynuevaNoticia.php"); ?>
                 </div>
             </main>
             <footer>
@@ -26,7 +24,9 @@
                     <?php include("includes/footer.php"); ?>
                 </div>
             </footer>
-        </div>
-    </body>
 
+        </div>
+
+
+    </body>
 </html>

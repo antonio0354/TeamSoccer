@@ -2,6 +2,8 @@
 
 
 
+
+
 <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Heebo&display=swap" rel="stylesheet">
@@ -9,6 +11,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 
+  <link href="https://cdn.quilljs.com/1.3.4/quill.snow.css" rel="stylesheet">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -20,11 +23,13 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <script src="js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.quilljs.com/1.3.4/quill.js"></script>
 
-  
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/video.css">
-  <link rel="stylesheet" href="css/cookiealert.css"> 
+    <link rel="stylesheet" href="css/cookiealert.css">
 
 
   

@@ -1,8 +1,16 @@
+
 #formulario label {
   color:#FB3A3A;
   font-weight:bold;
 }
 label.error { float: none; color: red; padding-left: .5em; vertical-align: middle; font-size: 12px; }
+  .standalone-container {
+    margin: 50px auto;
+    max-width: 720px;
+  }
+  #snow-container {
+    height: 350px;
+  }
 #form {
   width: 250px;
   margin: 0 auto;
@@ -14,7 +22,7 @@ label.error { float: none; color: red; padding-left: .5em; vertical-align: middl
 }
 
 #form label {
-  font-size: 20px;
+  font-size: 50px;
 }
 
 input[type="radio"] {

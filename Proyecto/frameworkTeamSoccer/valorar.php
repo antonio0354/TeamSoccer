@@ -2,31 +2,31 @@
 <html>
     <head>
         <?php include("includes/head-tag-contents.php"); ?>
-    
     </head>
+
     <body>
         <div class="container">
             <header>
-
-                <div class="row">
+                <div class="row" >
                     <?php include("includes/design-top.php"); ?>
                 </div>
-                <div class="row">
+
+                <div class="row" >
                     <?php include("includes/nav.php"); ?>
                 </div>
             </header>
             <main>
-                <div class="row text-center">
-
-                    <?php include("includes/bodyRegistro.php"); ?>
+                <div class="row text-center" >
+                    <?php include("includes/bodyValorar.php"); ?>
                 </div>
             </main>
             <footer>
-                <div class="row">
+                <div class="row" >
                     <?php include("includes/footer.php"); ?>
                 </div>
             </footer>
         </div>
     </body>
-
 </html>
+
+
