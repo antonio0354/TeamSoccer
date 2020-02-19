@@ -2,6 +2,9 @@
 require_once 'Conexion.php';
 $conex = new Conexion();
 $consulta = $conex->query("Select * from contenido ");
+
+$consultaValoracion = $conex->query("Select * from valoraciones ");
+
 ?>
 <div class="col-sm-9" >
 
