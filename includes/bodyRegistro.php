@@ -177,14 +177,14 @@ error_reporting(E_ALL);
                             $codigo_postal=$_POST['codigo_postal'];
                             $telefono=$_POST['telefono'];
                             $conex = new Conexion();
-                            echo "INSERT INTO usuario VALUES ('','$nombreUsu','$password1','$nombre','$apellido1','$apellido2','$email','$fecha_nacimiento','$pais','$codigo_postal','$telefono','valorador');";
+                            //echo "INSERT INTO usuario VALUES (0,'$nombreUsu','$password1','$nombre','$apellido1','$apellido2','$email','$fecha_nacimiento','$pais','$codigo_postal','$telefono','valorador');";
                             
-                            $result=$conex->query("INSERT INTO usuario VALUES ('','$nombreUsu','$password1','$nombre','$apellido1','$apellido2','$email','$fecha_nacimiento','$pais','$codigo_postal','$telefono','valorador');");
+                            $result=$conex->query("INSERT INTO usuario VALUES (0,'$nombreUsu','$password1','$nombre','$apellido1','$apellido2','$email','$fecha_nacimiento','$pais','$codigo_postal','$telefono','valorador');");
                             
                             
-                            //    echo '<script type="text/javascript">
-//window.location.assign("index.php");
-//</script>';
+                            echo '<script type="text/javascript">
+window.location.assign("index.php");
+</script>';
                             
                         }
                         

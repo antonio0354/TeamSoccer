@@ -68,7 +68,7 @@ require_once 'Conexion.php';
 
                                                 if (move_uploaded_file($_FILES['subirimagen']['tmp_name'], $target_path)) {
                                                     $conex = new Conexion();
-                                                    $consulta = $conex->query("INSERT INTO contenido VALUES ('', '$_POST[titulo]', '$fechaFormat', '$texto', '$target_path')");
+                                                    $consulta = $conex->query("INSERT INTO contenido VALUES (0, '$_POST[titulo]', '$fechaFormat', '$texto', '$target_path')");
 
                                                     if ($consulta) {
                                                         ?>

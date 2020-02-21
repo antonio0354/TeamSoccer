@@ -6,7 +6,7 @@ if (isset($_POST['valorar2'])) {
     $idusuario = $_SESSION['idusuario'];
     $comentario = $_POST['comentario'];
     $estrellas = $_POST['estrellas'];
-    $consultaInsert = $conex->query("INSERT INTO valoracion VALUES ('', '$idusuario', '$IDcontenido', '$estrellas', '$comentario')");
+    $consultaInsert = $conex->query("INSERT INTO valoracion VALUES (0, '$idusuario', '$IDcontenido', '$estrellas', '$comentario')");
 
 
     echo '<script type="text/javascript">
