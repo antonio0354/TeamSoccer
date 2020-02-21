@@ -156,6 +156,7 @@
                             
                         }
                         require_once 'Conexion.php';
+                        if
                         if(isset($_POST['submit']) && $valida==true){
                           
                             $nombreUsu=$_POST['nombre_usuario'];
