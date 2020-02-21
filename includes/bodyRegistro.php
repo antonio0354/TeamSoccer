@@ -1,3 +1,9 @@
+<?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+
 <div class="container">
     <div class="row text-center">
         <div class="col-md-6 offset-md-3">
@@ -156,7 +162,7 @@
                             
                         }
                         require_once 'Conexion.php';
-                        if
+                   
                         if(isset($_POST['submit']) && $valida==true){
                           
                             $nombreUsu=$_POST['nombre_usuario'];
