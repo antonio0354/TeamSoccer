@@ -1,17 +1,43 @@
 <?php
 require_once 'Conexion.php';
 $conex = new Conexion();
-$consulta = $conex->query("Select * from contenido ");
+$consulta = $conex->query("Select * from contenido");
 
-$consultaValoracion = $conex->query("Select * from valoraciones ");
 
+
+?>
+
+
+    <?php
+    if (isset($_SESSION['rol'])) {
+        if ($_SESSION['rol'] == 'editor') {
+            ?>
+        </div>
+
+        <div class="col-sm-12">
+            <form action="nuevaNoticia.php" method="post">
+                <input type="submit" class="btn btn-secondary float-right" name="addNoticia" value="Añadir Noticia">
+            </form>
+        </div>
+
+        <?php
+    }
+} else {
+    ?>
+    </div>
+    <?php
+}
 ?>
 <div class="col-sm-9" >
 
     <?php
-    $contador = 1;
     while ($object = $consulta->fetch_object()) {
-        $array[] = $object->id;
+        $id = $object->id;
+        $consultaValoracion = $conex->query("Select * from valoracion where id_contenido = '$id'");
+        
+        
+
+        
         ?>  
         <div class="row">
             <div class="col-sm-12 " >
@@ -45,6 +71,28 @@ $consultaValoracion = $conex->query("Select * from valoraciones ");
                 ?>
             </div>
         </div>
+    <?php
+
+        while($object2 = $consultaValoracion->fetch_object()){
+                  $idUsuario=$object2->id_usuario;
+        
+        $consultaUsuario = $conex->query("Select * from usuario where id = '$idUsuario'");
+        
+        while($objectUsu = $consultaUsuario->fetch_object()) {
+                echo $objectUsu->nombre_usuario." - ";
+                echo $object2->comentario." - ";
+                echo $object2->valoracion." estrellas<br>";
+        
+        }
+        }
+        
+  
+
+
+        ?>
+    
+
+       
         <br>
         <hr width="100%" style="border-width:3px; border-color: red;"/>
 
@@ -54,25 +102,6 @@ $consultaValoracion = $conex->query("Select * from valoraciones ");
     }
     ?>
 
-    <?php
-    if (isset($_SESSION['rol'])) {
-        if ($_SESSION['rol'] == 'editor') {
-            ?>
-        </div>
-
-        <div class="col-sm-12">
-            <form action="nuevaNoticia.php" method="post">
-                <input type="submit" class="btn btn-secondary float-right" name="addNoticia" value="Añadir Noticia">
-            </form>
-        </div>
-
-        <?php
-    }
-} else {
-    ?>
-    </div>
-    <?php
-}
 
 
 
