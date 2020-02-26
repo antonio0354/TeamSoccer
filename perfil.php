@@ -15,7 +15,7 @@
             </header>
             <main>
                 <div class="row ">
-                    <?php include("includes/bodyeditarperfil.php"); ?>
+                    <?php include("includes/bodyperfil.php"); ?>
                 </div>
             </main>
             <footer>

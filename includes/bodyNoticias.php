@@ -33,7 +33,7 @@ $consulta = $conex->query("Select * from contenido");
     <?php
     while ($object = $consulta->fetch_object()) {
         $id = $object->id;
-        $consultaValoracion = $conex->query("Select * from valoracion where id_contenido = '$id'");
+        $consultaValoracion1 = $conex->query("Select * from valoracion where id_contenido = '$id'");
         
         
 
@@ -64,25 +64,51 @@ $consulta = $conex->query("Select * from contenido");
                 } else {
                     ?>
                     <input type="submit" name="valorar" value="Valorar" class="btn btn-success mb-4 mt-4" disabled="true"><br>
-                    <p style="color:red; font-family: monospace">DEBES INICIAR SESIÓN PARA VALORAR</p>
+                    <p style="color:red; font-family: monospace">DEBES INICIAR SESIÓN PARA VALORAR</p><br><br>
 
                     <?php
                 }
                 ?>
             </div>
         </div>
+    
     <?php
+    
+                if ($consultaValoracion1->fetch_object() == NULL){
+                    
+                } else{
+                    
+    ?>
+    <table border="1px">
+        <tr>
+        <th>Usuario</th>
+        <th>Comentario</th>
+        <th>Estrellas</th>
+        </tr>
+    <?php
+                }
+        $consultaValoracion = $conex->query("Select * from valoracion where id_contenido = '$id'");
 
         while($object2 = $consultaValoracion->fetch_object()){
                   $idUsuario=$object2->id_usuario;
         
         $consultaUsuario = $conex->query("Select * from usuario where id = '$idUsuario'");
+        ?>
+    
+    
+    
         
+        <?php
         while($objectUsu = $consultaUsuario->fetch_object()) {
-                echo $objectUsu->nombre_usuario." - ";
-                echo $object2->comentario." - ";
-                echo $object2->valoracion." estrellas<br>";
+            ?>
+                <tr>
+                    <td><?php echo $objectUsu->nombre_usuario?></td>
+                    <td><?php echo $object2->comentario?></td>
+                    <td><?php echo $object2->valoracion?></td>
+                </tr>
+               
         
+                <?php
         }
         }
         
@@ -92,7 +118,7 @@ $consulta = $conex->query("Select * from contenido");
         ?>
     
 
-       
+       </table>
         <br>
         <hr width="100%" style="border-width:3px; border-color: red;"/>
 

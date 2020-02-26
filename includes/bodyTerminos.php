@@ -5,16 +5,16 @@
 <div class="col-sm-12">
      
     <h3 class="mb-3">1.Datos</h3>
-    <p>TeamSoccer es una pagina web con domicilio en Lucena(Córdoba), correo electrónico teamsoccer@gmail.com y teléfono 123456789</p>
+    <span>TeamSoccer es una pagina web con domicilio en Lucena(Córdoba), correo electrónico teamsoccer@gmail.com y teléfono 123456789</span>
 
     <h3 class="mb-3">2.Política de privacidad</h3>
-    <p>Los datos personales del interesado podrán ser incluidos en la base de datos de TeamSoccer con la finalidad de prestar servicios al cliente, facilitar información personalizada a cada cliente o atender las solicitudes. Sin la autorización de dicha política no se podrá ejecutar la solicitud.</p>
-    <p>Podrán usar los datos de cada cliente aquellas entidades, organismos o colaboradores en caso de que sea necesario para cumplir las solicitudes asumindas</p>
+    <span>Los datos personales del interesado podrán ser incluidos en la base de datos de TeamSoccer con la finalidad de prestar servicios al cliente, facilitar información personalizada a cada cliente o atender las solicitudes. Sin la autorización de dicha política no se podrá ejecutar la solicitud.</span>
+    <span>Podrán usar los datos de cada cliente aquellas entidades, organismos o colaboradores en caso de que sea necesario para cumplir las solicitudes asumindasspanp>
 
     <h3 class="mb-3">3.Propiedad</h3>
-    <p>Los contenidos de TeamSoccer, SALVO LOS INDICADOS EN EL APARTADO 4.FUENTES EXTERNAS, son propiedad de TeamSoccer y dispone de autorización para su uso en otras páginas, y están sujetos a la protección de las normas españolas, nacionales e internacionales. Está prohibido el uso de nuestros contenidos con fines comerciales en cualquier página externa</p>
-    <p>Para utilizar nuestros contenidos para usos no comerciales deben de citar su fuente de la siguiente manera: "Fuente de dicho contenido: TeamSoccer"</p>
-    <p>Los contenidos de TeamSoccer tienen la función de entretener e informar a los usuarios. TeamSoccer no asume ninguna responsabilidad en caso errores o inexactitudes en nuestra información</p>
+    <span>Los contenidos de TeamSoccer, SALVO LOS INDICADOS EN EL APARTADO 4.FUENTES EXTERNAS, son propiedad de TeamSoccer y dispone de autorización para su uso en otras páginas, y están sujetos a la protección de las normas españolas, nacionales e internacionales. Está prohibido el uso de nuestros contenidos con fines comerciales en cualquier página externa</span>
+    <span>Para utilizar nuestros contenidos para usos no comerciales deben de citar su fuente de la siguiente manera: "Fuente de dicho contenido: TeamSoccer"</span>
+    <span>Los contenidos de TeamSoccer tienen la función de entretener e informar a los usuarios. TeamSoccer no asume ninguna responsabilidad en caso errores o inexactitudes en nuestra información</span>
     
     <h3 class="mb-3">4.Fuentes externas</h3>
     
