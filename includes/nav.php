@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 
@@ -6,28 +5,19 @@ session_start();
 require_once 'Conexion.php';
 $conex = new Conexion();
 if (isset($_POST['boton'])) {
-    $consulta = $conex->query("Select * from usuario where email='$_POST[em]' && password='$_POST[contra]'");
-    $object = $consulta->fetch_object();
+    $consulta = $conex->query("Select  rol,email, password from usuario where email='$_POST[em]' && password='$_POST[contra]'");
+    $object=$consulta->fetch_object();
     if ($conex->affected_rows > 0) {
-        @$_SESSION['idusuario'] = $object->id;
-        
+             
         @$_SESSION['email'] = $_POST[em];
         @$_SESSION['contrasena'] = $_POST[contra];
         @$_SESSION['rol'] = $object->rol;
-        ?><div class="alert text-center cookiealert" role="alert">
-            <strong>Esta página web usa cookies</strong>
-            Las cookies de este sitio web se usan para personalizar el contenido y los anuncios, ofrecer funciones de redes sociales y analizar el tráfico. Además, compartimos información sobre el uso que haga del sitio web con nuestros partners de redes sociales, publicidad y análisis web, quienes pueden combinarla con otra información que les haya proporcionado o que hayan recopilado a partir del uso que haya hecho de sus servicios<br>
-            <button type="button" class="btn btn-success btn-sm " aria-label="Close">
-                Aceptar
-            </button>
-            <button id="" type="button" class="btn btn-secondary btn-sm" aria-label="Close">
-                Cancelar
-            </button>
-        </div>
-        <?php
+
+        
     } else {
         echo 'Usuario o contraseña incorrectos';
     }
+   
 }
 ?>
 
@@ -37,7 +27,7 @@ if (isset($_POST['boton'])) {
 
     <nav class="navbar navbar-expand-lg navbar-dark ">
         <div class="container">
-            <a class="navbar-brand" href="index.php"><img width="60" src="pelotqa.png"></a>
+            <a class="navbar-brand" href="index.php"><img width="60" alt="pelota" src="pelotqa.png"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -86,44 +76,39 @@ if (isset($_POST['boton'])) {
 
 
                     <li id="dropdownLoginLI" class="nav-item ml-4">
-                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle "><?php
-                            if (isset($_SESSION['email'])) {
-                                echo $_SESSION['email'];
-                            } else
-                                echo 'Login';
-                            ?> <span class="caret"></span></button>
+                        <button type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle "><?php if(isset($_SESSION['email'])) { echo $_SESSION['email']; }else echo 'Login';?> <span class="caret"></span></button>
                         <ul class="dropdown-menu dropdown-menu-right mt-2">
                             <li class="px-3 py-2">
-                                <div class="card">
+                                  <div class="card">
                                     <div class="card-body">
-<?php
-if (!isset($_SESSION['email'])) {
-    ?>
+                                        <?php
+                                        if (!isset($_SESSION['email'])) {
+                                            ?>
                                             <div>
-                                                <center><img src="iconos/usuario.png"></center>
+                                                  <center><img alt="iconousuario" src="iconos/usuario.png"></center>
                                             </div>
                                             <div>
                                                 <center>  <h4>Log In</h4></center>
                                             </div>
 
-                                            <center> <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#formularioModal">
-                                                    Haz click para iniciar sesión
-                                                </button></center>
-    <?php
-} else {
-    ?>
+                                           <center> <button class="btn btn-success btn-lg" data-toggle="modal" data-target="#formularioModal">
+                                                Haz click para iniciar sesión
+                                               </button></center>
+                                            <?php
+                                        } else {
+                                            ?>
                                             <div>
-                                                <img src="iconos/usuario.png">
+                                                <img alt="iconousuario" src="iconos/usuario.png">
                                             </div>
                                             <div>
-                                                <a href=""><?php echo $_SESSION['email'] ?></a><br>
+                                                <a href=""><?php echo $_SESSION['email']?></a><br>
                                                 <hr>
-                                                <a href="perfil.php">Mi Perfil</a><br>
+                                                <a href="editarperfil.php">Mi Perfil</a><br>
                                                 <a href="cerrar_sesion.php">Cerrar Sesion</a>
                                             </div>
-    <?php
-}
-?>
+                                            <?php
+                                        }
+                                        ?>
 
 
 
@@ -131,22 +116,22 @@ if (!isset($_SESSION['email'])) {
 
                                     </div>
                                 </div>
-<?php if (!isset($_SESSION['email'])) { ?>
-                                    <form class="form" role="form" method="post">
+                                <?php if (!isset($_SESSION['email'])) { ?>
+                                <form class="form" role="form" method="post">
 
-                                        <div class="text-center">
-                                            <small>or</small>
-                                        </div>
+                                    <div class="text-center">
+                                        <small>or</small>
+                                    </div>
 
-                                        <div class="form-group">
-                                            <center><submit id="googleSignInBtn" class="btn-google" >SIGN IN WITH GOOGLE</submit></center>
-                                        </div>
+                                    <div class="form-group">
+                                        <center><submit id="googleSignInBtn" class="btn-google" >SIGN IN WITH GOOGLE</submit></center>
+                                    </div>
 
-                                        <div class="form-group text-center">
-                                            <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
-                                        </div>
-                                    </form>
-<?php } ?>
+                                    <div class="form-group text-center">
+                                        <small><a href="#" data-toggle="modal" data-target="#modalPassword">Forgot password?</a></small>
+                                    </div>
+                                </form>
+                                <?php } ?>
                             </li>
                         </ul>
                     </li>
@@ -154,7 +139,7 @@ if (!isset($_SESSION['email'])) {
                         <button type="button" id="dropdownLogoutMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Name: <span class="caret"></span></button>
                         <ul class="dropdown-menu dropdown-menu-right mt-2">
                             <li class="px-3 py-2">
-                                <!--<form class="form" role="form">-->
+                                <form class="form" role="form">
                                     <div class="form-group">
                                         <button  type="submit"  class="dropdown-item btn btn-primary btn-block"><a href="editarperfil.php">Edit profile</a></button>
                                     </div>
@@ -166,18 +151,16 @@ if (!isset($_SESSION['email'])) {
                                         <button id="googleSignoutBtn" onclick="signOut()" class="btn-google">SIGN OUT</button>
                                     </div>
 
-                                <!--</form>-->
+                                </form>
                             </li>
                         </ul>
                 </ul>
 
                 </li>
-                
-               
                 <script>startApp();</script>
-
+               
                 </ul>
-                <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div id="modalPassword" class="modal fade" tabindex="-1" role="dialog" >
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
@@ -205,7 +188,7 @@ if (!isset($_SESSION['email'])) {
             <div class="modal-content">
 
                 <div class="modal-header">
-                    <img src="iconos/usuario.png">
+                    <img alt="iconousuario" src="iconos/usuario.png">
                     <button type="button" class="close" data-dismiss="modal">
                         <span aria-hidden="true">X</span>
                     </button>
@@ -231,18 +214,14 @@ if (!isset($_SESSION['email'])) {
                             <input type="submit" class="btn btn-primary submitBtn" name="boton" value="Acceder">
 
                         </div>
-                       
                     </form>
 
                 </div>
             </div>
         </div>
     </div>
-   
+
+
+
+
 </div>
-
-    
- 
-
-
-
