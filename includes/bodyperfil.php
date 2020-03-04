@@ -75,11 +75,8 @@ $object = $consulta->fetch_object();
                                 </div>
                             </div>
                         </div>
-                        <hr class="colorgraph">
-                        <div class="row">
-                            <div class="col-xs-12 col-md-6"></div>
-                            <div class="col-xs-12 col-md-6"><a href="editarperfil.php" class="btn btn-success btn-block btn-lg">Editar perfil</a></div>
-                        </div>
+                       
+                       
                     </form>
                 </div>
                

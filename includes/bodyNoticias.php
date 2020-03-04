@@ -79,8 +79,8 @@ $consulta = $conex->query("Select * from contenido");
                 } else{
                     
     ?>
-    <table border="1px">
-        <tr>
+    <table  class="table">
+        <tr class="thead-dark">
         <th>Usuario</th>
         <th>Comentario</th>
         <th>Estrellas</th>
