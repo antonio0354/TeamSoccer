@@ -1,6 +1,6 @@
 <?php include("includes/a_config.php"); ?>
 <!DOCTYPE html>
-<html>
+<html lang="es">
     <head>
         <?php include("includes/head-tag-contents.php"); ?>
     </head>
@@ -16,6 +16,7 @@
                 </div>
             </header>
             <main>
+                <h1 style="visibility: hidden">Champions</h1>
                 <div class="row" >
                     <?php include("includes/bodyChampions.php"); ?>
                 </div>

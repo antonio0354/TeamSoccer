@@ -11,24 +11,21 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner  border border-primary mb-3   ">
                     <div class="carousel-item active">
-                        <img class="img-fluid  " src="imagenes/madrid2.jpg" >
+                        <img class="img-fluid  "alt="img1"  src="imagenes/madrid2.jpg" >
 
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid  " src="imagenes/madrid1.jpg" >
+                        <img class="img-fluid  " alt="img2" src="imagenes/madrid1.jpg" >
 
                     </div>
                     <div class="carousel-item  ">
-                        <img class="img-fluid" src="imagenes/madrid3.jpg" >
+                        <img class="img-fluid" alt="img alt="juve1"3" src="imagenes/madrid3.jpg" >
 
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#demo1" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo1" data-slide="next">
+               
                     <span class="carousel-control-next-icon"></span>
-                </a>
 
                 <h4> Gran partido del Real Madrid con sabor agridulce</h4>
             </div>
@@ -43,24 +40,21 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner  border border-primary mb-3  ">
                     <div class="carousel-item active">
-                        <img class="img-fluid  " src="imagenes/juventus1.jpg" >
+                        <img class="img-fluid  " alt="juve1" src="imagenes/juventus1.jpg" >
 
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid  " src="imagenes/juventus2.jpg" >
+                        <img class="img-fluid  " alt="juve2" src="imagenes/juventus2.jpg" >
 
                     </div>
                     <div class="carousel-item  ">
-                        <img class="img-fluid " src="imagenes/juventus3.jpg" >
+                        <img class="img-fluid " alt="juve3" src="imagenes/juventus3.jpg" >
 
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#demo2" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo2" data-slide="next">
+               
                     <span class="carousel-control-next-icon"></span>
-                </a>
 
                 <h4> Victoria con gol de Dybala ayer en el Juventus Stadium</h4>
             </div>
@@ -76,26 +70,24 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner  border border-primary mb-3  ">
                     <div class="carousel-item active">
-                        <img class="img-fluid  " src="imagenes/barcelona1.jpg"  >
+                        <img class="img-fluid  " alt="barsa1" src="imagenes/barcelona1.jpg"  >
 
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid  " src="imagenes/barcelona2.jpg"  >
+                        <img class="img-fluid  " alt="barsa2" src="imagenes/barcelona2.jpg"  >
 
                     </div>
                     <div class="carousel-item ">
-                        <img class="img-fluid " src="imagenes/barcelona3.jpg" >
+                        <img class="img-fluid " alt="barsa alt="liverpool1"3" src="imagenes/barcelona3.jpg" >
 
                     </div>
 
 
                 </div>
-                <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+               
                     <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo3" data-slide="next">
+               
                     <span class="carousel-control-next-icon"></span>
-                </a>
 
                 <h4> El Barcelona necesita ganar para asegurar la 1era Plaza</h4>
             </div>
@@ -109,24 +101,21 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner  border border-primary mb-3  ">
                     <div class="carousel-item active">
-                        <img class="img-fluid " src="imagenes/liverpool1.jpg" >
+                        <img class="img-fluid " alt="liverpool1" src="imagenes/liverpool1.jpg" >
 
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid  " src="imagenes/liverpool2.jpg" >
+                        <img class="img-fluid  " alt="liverpool2" src="imagenes/liverpool2.jpg" >
 
                     </div>
                     <div class="carousel-item  ">
-                        <img class="img-fluid" src="imagenes/liverpool3.jpg" >
+                        <img class="img-fluid" alt="liverpool3" src="imagenes/liverpool3.jpg" >
 
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#demo4" data-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo4" data-slide="next">
+                
                     <span class="carousel-control-next-icon"></span>
-                </a>
 
                 <h4> El lider de la Premier se mide a un fuerte Napoli</h4>
             </div>
@@ -146,8 +135,10 @@
                     </video>
                     <div id="video-controls" class="videoChampions">
                         <button type="button" id="play-pause" class="play">Play</button>
-                        <input type="range" id="seek-bar" value="0">
+                        <label>Mute</label>
+                        <input  type="range" id="seek-bar" value="0">
                         <button type="button" id="mute">Mute</button>
+                        <label>Mute</label>
                         <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1">
                         <button type="button" id="full-screen">Full-Screen</button>
 
@@ -160,7 +151,7 @@
             <h4> Intro Champions League</h4>
         </div>
         <div class="col-sm-6 ">
-            <img class="img-fluid border border-primary mb-3"  src="imagenes/copaChampions.png">
+            <img class="img-fluid border border-primary mb-3"  alt="imagenes1"  src="imagenes/copaChampions.png">
             <h4> Copa de la Champions</h4>
         </div>
         
@@ -184,7 +175,7 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td nowrap> <img width="20" src="imagenes/psg.jpg">PSG</td>
+                <td nowrap> <img width="20" alt="imagenes2" src="imagenes/psg.jpg">PSG</td>
                 <td>13</td>
                 <td>5</td>
                 <td>4</td>
@@ -194,7 +185,7 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td nowrap> <img width="20" src="imagenes/4.png">Real Madrid</td>
+                <td nowrap> <img width="20" alt="imagenes3" src="imagenes/4.png">Real Madrid</td>
                 <td>8</td>
                 <td>5</td>
                 <td>2</td>
@@ -204,7 +195,7 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td nowrap> <img width="20" src="imagenes/brujas.png">Brujas </td>
+                <td nowrap> <img width="20" alt="imagenes4" src="imagenes/brujas.png">Brujas </td>
                 <td>3</td>
                 <td>5</td>
                 <td>0</td>
@@ -214,7 +205,7 @@
             </tr>
             <tr>
                 <td>4</td>
-                <td nowrap> <img width="20" src="imagenes/galatasaray.png">Galatasaray</td>
+                <td nowrap> <img width="20" alt="imagenes5" src="imagenes/galatasaray.png">Galatasaray</td>
                 <td>2</td>
                 <td>5</td>
                 <td>0</td>
@@ -242,7 +233,7 @@
         </tr>
         <tr>
             <td>1</td>
-            <td nowrap ><img width="20" src="imagenes/bayern.png">Bayern</td>
+            <td nowrap ><img width="20" alt="imagenes6" src="imagenes/bayern.png">Bayern</td>
             <td>15</td>
             <td>5</td>
             <td>5</td>
@@ -252,7 +243,7 @@
         </tr>
         <tr>
             <td>2</td>
-            <td nowrap> <img width="20" src="imagenes/tottenham.png">Tottenham</td>
+            <td nowrap> <img width="20" alt="imagenes7" src="imagenes/tottenham.png">Tottenham</td>
             <td>10</td>
             <td>5</td>
             <td>3</td>
@@ -262,7 +253,7 @@
         </tr>
         <tr>
             <td>3</td>
-            <td nowrap> <img width="20" src="imagenes/estrella.png">Crvena Zvezda </td>
+            <td nowrap> <img width="20" alt="imagenes8" src="imagenes/estrella.png">Crvena Zvezda </td>
             <td>3</td>
             <td>5</td>
             <td>1</td>
@@ -272,7 +263,7 @@
         </tr>
         <tr>
             <td>4</td>
-            <td nowrap> <img width="20" src="imagenes/olympiacos.png">Olympiacos</td>
+            <td nowrap> <img width="20" alt="imagenes9" src="imagenes/olympiacos.png">Olympiacos</td>
             <td>1</td>
             <td>5</td>
             <td>0</td>

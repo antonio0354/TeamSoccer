@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+    
     <head>
         <?php include("includes/head-tag-contents.php"); ?>
     </head>
@@ -23,10 +24,8 @@
                 <div class="row">
                     <?php include("includes/footer.php"); ?>
                 </div>
-                
-                <?php include("includes/cookie.php"); ?>
             </footer>
-            
+
         </div>
 
 

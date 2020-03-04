@@ -44,7 +44,7 @@ $consulta = $conex->query("Select * from contenido");
                 <h1 class="text-center mt-5 float-left borde"><?php echo $object->titulo ?></h1> 
             </div>
             <div class="col-sm-6 " >
-                <img  class="w-100 p-3" src="<?php echo $object->imagen ?>">
+                <img  class="w-100 p-3" alt="imagen" src="<?php echo $object->imagen ?>">
             </div>
             <div  class="col-sm-6 " >
                 <h3 class="text-center mt-5"><?php echo $object->texto ?></h3>
@@ -64,7 +64,7 @@ $consulta = $conex->query("Select * from contenido");
                 } else {
                     ?>
                     <input type="submit" name="valorar" value="Valorar" class="btn btn-success mb-4 mt-4" disabled="true"><br>
-                    <p style="color:red; font-family: monospace">DEBES INICIAR SESIÓN PARA VALORAR</p><br><br>
+                    <span style="color:black; font-family: monospace">DEBES INICIAR SESIÓN PARA VALORAR</span><br><br>
 
                     <?php
                 }
