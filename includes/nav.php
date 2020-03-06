@@ -103,7 +103,7 @@ if (isset($_POST['boton'])) {
                                             <div>
                                                 <a href=""><?php echo $_SESSION['email']?></a><br>
                                                 <hr>
-                                                <a href="editarperfil.php">Mi Perfil</a><br>
+                                                <a href="perfil.php">Mi Perfil</a><br>
                                                 <a href="cerrar_sesion.php">Cerrar Sesion</a>
                                             </div>
                                             <?php

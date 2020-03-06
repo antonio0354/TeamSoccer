@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="es0">
     <head>
         <?php include("includes/head-tag-contents.php"); ?>
     </head>

@@ -4,7 +4,7 @@
         <div class="col">
 
             <div class="hovereffect">
-                <img class="img-fluid" src="imagenes/mundial4.jpg">
+                <img class="img-fluid"  alt="imagen" src="imagenes/mundial4.jpg">
                 <div class="overlay">
                     <h2>Mundial 2022 Qatar</h2>
                     <a class="info" href="#">Ver informacion sobre Mundial Qatar 2022</a>
@@ -39,7 +39,7 @@
     </div>
     <div class="row">
         <div class="col ml-3 mt-3">
-            <img class="img-fluid" src="imagenes/mundial5.jpg">
+            <img class="img-fluid"  alt="imagen" src="imagenes/mundial5.jpg">
         </div>
 
 
@@ -49,33 +49,33 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="view">
-                            <img class="img-fluid" src="imagenes/mundial1.jpg">
+                            <img class="img-fluid"  alt="imagen" src="imagenes/mundial1.jpg">
 
                         </div>
 
                     </div>
                     <div class="carousel-item">
                         <div class="view">
-                            <img class="img-fluid" src="imagenes/mundial2.jpg">
+                            <img class="img-fluid"  alt="imagen" src="imagenes/mundial2.jpg">
 
                         </div>
 
                     </div>
                     <div class="carousel-item">
                         <div class="view">
-                            <img class="img-fluid" src="imagenes/mundial3.jpg">
+                            <img class="img-fluid"  alt="imagen" src="imagenes/mundial3.jpg">
                         </div>
 
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+               
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+            
+                
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                </a>
+               
 
             </div>
         </div>
@@ -102,7 +102,7 @@
         <tbody>
             <tr>
                 <td>1</td>
-                <td nowrap><img width="20" src="imagenes/belgica.png">Belgica</td>
+                <td nowrap><img width="20" alt="imagen"  src="imagenes/belgica.png">Belgica</td>
                 <th>16</th>
                 <td>6</td>
                 <td>40</td>
@@ -111,7 +111,7 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td nowrap><img width="20" src="imagenes/croacia.png">Croacia</td>
+                <td nowrap><img width="20"  alt="imagen" src="imagenes/croacia.png">Croacia</td>
                 <th>14</th>
                 <td>9</td>
                 <td>29</td>
@@ -119,7 +119,7 @@
                 <td>15</td>
             </tr><tr>
                 <td>3</td>
-                <td nowrap><img width="20" src="imagenes/francia.png">Francia</td>
+                <td nowrap><img width="20" alt="imagen"  src="imagenes/francia.png">Francia</td>
                 <th>14</th>
                 <td>6</td>
                 <td>29</td>
@@ -127,7 +127,7 @@
                 <td>12</td>
             </tr><tr>
                 <td>4</td>
-                <td nowrap><img width="20" src="imagenes/ingl.png">Inglaterra</td>
+                <td nowrap><img width="20" alt="imagen"  src="imagenes/ingl.png">Inglaterra</td>
                 <th>12</th>
                 <td>8</td>
                 <td>29</td>
@@ -135,7 +135,7 @@
                 <td>8</td>
             </tr><tr>
                 <td>5</td>
-                <td nowrap><img width="20" src="imagenes/rusia.png" >Rusia</td>
+                <td nowrap><img width="20"  alt="imagen" src="imagenes/rusia.png" >Rusia</td>
                 <th>11</th>
                 <td>7</td>
                 <td>17</td>
@@ -143,7 +143,7 @@
                 <td>7</td>
             </tr><tr>
                 <td>6</td>
-                <td><img width="20" src="imagenes/brasil.png">Brasil</td>
+                <td><img width="20"  alt="imagen" src="imagenes/brasil.png">Brasil</td>
                 <th>8</th>
                 <td>3</td>
                 <td>40</td>
@@ -151,7 +151,7 @@
                 <td>7</td>
             </tr><tr>
                 <td>7</td>
-                <td><img width="20" src="imagenes/espana.png">España</td>
+                <td><img width="20"  alt="imagen" src="imagenes/espana.png">España</td>
                 <th>7</th>
                 <td>6</td>
                 <td>25</td>

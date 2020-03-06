@@ -7,34 +7,34 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="view">
-                            <img class="d-block w-100" src="imagenes/eurocopaC1.jpg">
+                            <img class="d-block w-100"  alt="imagen" src="imagenes/eurocopaC1.jpg">
 
                         </div>
 
                     </div>
                     <div class="carousel-item">
                         <div class="view">
-                            <img class="d-block w-100" src="imagenes/eurocopaC2.jpg">
+                            <img class="d-block w-100"  alt="imagen" src="imagenes/eurocopaC2.jpg">
 
                         </div>
 
                     </div>
                     <div class="carousel-item">
                         <div class="view">
-                            <img class="d-block w-100" src="imagenes/eurocopaC3.jpg">
+                            <img class="d-block w-100" alt="imagen"  src="imagenes/eurocopaC3.jpg">
 
                         </div>
 
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+               
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+              
+            
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                </a>
+               
 
             </div>
 
@@ -42,7 +42,7 @@
         </div>
         <div class="col border border-secundary p-0">
             <div class="hovereffect">
-                <img class="img-fluid" src="imagenes/eurocopaEntradas.jpg">
+                <img class="img-fluid"  alt="imagen" src="imagenes/eurocopaEntradas.jpg">
                 <div class="overlay">
                     <h2>Entradas para la Eurocopa</h2>
                     <a class="info" href="#">Haz click aquí para comprar tus entradas</a>
@@ -54,7 +54,7 @@
     <div class="row">
         <div class="col border border-secundary p-0">
             <div class="hovereffect">
-                <img class="img-fluid" src="imagenes/eurocopC0.jpg">
+                <img class="img-fluid"  alt="imagen" src="imagenes/eurocopC0.jpg">
                 <div class="overlay">
                     <h2>Sorteo de la fase final</h2>
                     <a class="info" href="#">Ver el sorteo</a>
@@ -69,33 +69,33 @@
                 <div class="carousel-inner" role="listbox">
                     <div class="carousel-item active">
                         <div class="view">
-                            <img class="img-fluid" src="imagenes/eurocopaC1.jpg">
+                            <img class="img-fluid"  alt="imagen" src="imagenes/eurocopaC1.jpg">
 
                         </div>
 
                     </div>
                     <div class="carousel-item">
                         <div class="view">
-                            <img class="img-fluid" src="imagenes/eurocopaC2.jpg">
+                            <img class="img-fluid"  alt="imagen" src="imagenes/eurocopaC2.jpg">
 
                         </div>
 
                     </div>
                     <div class="carousel-item">
                         <div class="view">
-                            <img class="img-fluid" src="imagenes/eurocopaC3.jpg">
+                            <img class="img-fluid" alt="imagen"  src="imagenes/eurocopaC3.jpg">
                         </div>
 
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#carousel2" role="button" data-slide="prev">
+            
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carousel2" role="button" data-slide="next">
+              
+          
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="sr-only">Next</span>
-                </a>
+               
 
             </div>
         </div>
@@ -119,7 +119,7 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td nowrap><img width="20" src="imagenes/espana.png">España</td>
+                <td nowrap><img width="20"  alt="imagen" src="imagenes/espana.png">España</td>
                 <td>10</td>
                 <td>8</td>
                 <td>2</td>
@@ -128,7 +128,7 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td nowrap><img width="20" src="imagenes/suecia.png">Suecia</td>
+                <td nowrap><img width="20" alt="imagen"  src="imagenes/suecia.png">Suecia</td>
                 <td>10</td>
                 <td>6</td>
                 <td>3</td>
@@ -136,7 +136,7 @@
                 <td>21</td>
             </tr><tr>
                 <td>3</td>
-                <td nowrap><img width="20" src="imagenes/noruega.png">Noruega</td>
+                <td nowrap><img width="20" alt="imagen"  src="imagenes/noruega.png">Noruega</td>
                 <td>10</td>
                 <td>4</td>
                 <td>5</td>
@@ -144,7 +144,7 @@
                 <td>17</td>
             </tr><tr>
                 <td>4</td>
-                <td nowrap><img width="20" src="imagenes/rumania.png">Rumania</td>
+                <td nowrap><img width="20" alt="imagen"  src="imagenes/rumania.png">Rumania</td>
                 <td>10</td>
                 <td>4</td>
                 <td>2</td>
@@ -152,7 +152,7 @@
                 <td>14</td>
             </tr><tr>
                 <td>5</td>
-                <td nowrap><img width="20" src="imagenes/feroe.png" >Islas Feroe</td>
+                <td nowrap><img width="20" alt="imagen"  src="imagenes/feroe.png" >Islas Feroe</td>
                 <td>10</td>
                 <td>1</td>
                 <td>0</td>
@@ -160,7 +160,7 @@
                 <td>3</td>
             </tr><tr>
                 <td>6</td>
-                <td><img width="20" src="imagenes/malta.png">Malta</td>
+                <td><img width="20"  alt="imagen" src="imagenes/malta.png">Malta</td>
                 <td>10</td>
                 <td>1</td>
                 <td>0</td>

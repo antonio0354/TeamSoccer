@@ -13,21 +13,21 @@
             <form>
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="md-form mb-2">
+                       
                             
-                                <label style="color:black;" for="nombre">Nombre</label>
-                            <input type="text" name="nombre">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre">
                            
-                        </div>
+                       
                     </div>
                     
                     
                     <div class="col-md-6">
-                        <div class="md-form mb-2">
-                            <label style="color:black;" for="email">Email</label>
+                       
+                            <label for="email">Email</label>
 
-                            <input type="email" name="email" placeholder="Gmail">
-                        </div>
+                            <input type="email" id="email" name="email" placeholder="Gmail">
+                      
                     </div>
                 </div>
                 
@@ -35,22 +35,22 @@
                 
                 <div class="row">
                     <div class="col-sm-6">
-                        <div class="md-form mb-2">
-                          <label style="color:black;" for="asunto">Asunto</label>
+                       
+                            <label for="asunto">Asunto</label>
 
-                            <input type="text" name="asunto" width="100%" placeholder="Asunto">
-                        </div>
+                            <input type="text" id="asunto" name="asunto" width="100%" placeholder="Asunto">
+                       
                     </div>
                 </div>
 
                 
                 <div class="row">
                     <div class="col-md-12">
-                        <div class="md-form mb-2"></div>
-                        <label style="color:black;" for="mensaje">Mensaje</label>
+                       
+                            <label for="mensaje">Mensaje</label>
 
-                            <textarea type="text" name="mensaje" placeholder="Introduce tu mensaje" rows="2" class="form-control md-textarea"></textarea>                          
-                        </div>
+                            <textarea type="text" id="mensaje" name="mensaje" placeholder="Introduce tu mensaje" rows="2" class="form-control md-textarea"></textarea>                          
+                       
                     </div>
                 </div>
             </form>

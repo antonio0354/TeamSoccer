@@ -16,8 +16,8 @@
                 </div>
             </header>
             <main>
-                <div class="row text-center" >
-                    <?php include("includes/bodyContacto.php"); ?>
+                <div class="row" >
+                    <?php include("includes/bodytienda.php"); ?>
                 </div>
             </main>
             <footer>
@@ -26,5 +26,6 @@
                 </div>
             </footer>
         </div>
+
     </body>
 </html>

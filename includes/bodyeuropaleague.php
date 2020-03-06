@@ -26,15 +26,15 @@
             </div>
         </div> 
         <div class="col-sm-6">
-            <img  class="m-3 w-100" src="imagenes/munir.jpg">
+            <img  class="m-3 w-100" alt="imagen" src="imagenes/munir.jpg">
         </div> 
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <img  class="m-3 w-100" src="imagenes/werner.jpg">
+            <img  class="m-3 w-100" alt="imagen" src="imagenes/werner.jpg">
         </div> 
         <div class="col-sm-6">
-            <img  class="m-3 w-100" src="imagenes/euro.jpeg">
+            <img  class="m-3 w-100" alt="imagen" src="imagenes/euro.jpeg">
         </div> 
     </div>
 </div>

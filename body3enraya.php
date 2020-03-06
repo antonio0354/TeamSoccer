@@ -74,7 +74,7 @@ button {
 </head>
 <body>
     <div class="col-sm-12 abs-center">
-    <h1><img src=pelotqa.png> Tres en raya <img src=pelotqa.png></h1>
+    <h1><img alt="imagen" src=pelotqa.png> Tres en raya <img alt="imagen" src=pelotqa.png></h1>
    <table>
       <tbody>
 <tr>

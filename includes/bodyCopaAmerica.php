@@ -9,21 +9,21 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner mb-3  ">
                     <div class="carousel-item active">
-                        <img class="img-fluid  " src="imagenes/copaAmerica1.png" >
+                        <img class="img-fluid  " alt="imagen" src="imagenes/copaAmerica1.png" >
 
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid  " src="imagenes/copaAmerica2.png" >
+                        <img class="img-fluid  " alt="imagen"  src="imagenes/copaAmerica2.png" >
 
                     </div>
 
                 </div>
-                <a class="carousel-control-prev" href="#demo1" data-slide="prev">
+               
                     <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo1" data-slide="next">
+              
+               
                     <span class="carousel-control-next-icon"></span>
-                </a>
+              
 
                 <h4>Copa América Brasil 2019</h4>
             </div>
@@ -38,21 +38,21 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner mb-3  ">
                     <div class="carousel-item active">
-                        <img class="img-fluid  " src="imagenes/copaAmerica4.png" >
+                        <img class="img-fluid  "  alt="imagen" src="imagenes/copaAmerica4.png" >
 
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid  " src="imagenes/brasil1.png" >
+                        <img class="img-fluid  " alt="imagen"  src="imagenes/brasil1.png" >
 
                     </div>
 
                 </div>
-                <a class="carousel-control-prev" href="#demo2" data-slide="prev">
+                
                     <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo2" data-slide="next">
+             
+               
                     <span class="carousel-control-next-icon"></span>
-                </a>
+              
 
                 <h4>Fase final y victoria de Brasil en la Copa America 2019</h4>
 
@@ -69,23 +69,23 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner mb-3  ">
                     <div class="carousel-item active">
-                        <img class="img-fluid  " src="imagenes/messi1.png"  >
+                        <img class="img-fluid  "  alt="imagen" src="imagenes/messi1.png"  >
 
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid  " src="imagenes/messi2.png"  >
+                        <img class="img-fluid  "  alt="imagen" src="imagenes/messi2.png"  >
 
                     </div>
 
 
 
                 </div>
-                <a class="carousel-control-prev" href="#demo3" data-slide="prev">
+               
                     <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo3" data-slide="next">
+               
+                
                     <span class="carousel-control-next-icon"></span>
-                </a>
+                
 
                 <h4>Expulsión de Leo Messi en la Copa América</h4>
             </div>
@@ -99,21 +99,21 @@
                 <!-- The slideshow -->
                 <div class="carousel-inner mb-3  ">
                     <div class="carousel-item active">
-                        <img class="img-fluid " src="imagenes/peru1.png" >
+                        <img class="img-fluid "  alt="imagen" src="imagenes/peru1.png" >
 
                     </div>
                     <div class="carousel-item">
-                        <img class="img-fluid  " src="imagenes/peru2.png" >
+                        <img class="img-fluid  "  alt="imagen" src="imagenes/peru2.png" >
 
                     </div>
 
                 </div>
-                <a class="carousel-control-prev" href="#demo4" data-slide="prev">
+              
                     <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#demo4" data-slide="next">
+               
+               
                     <span class="carousel-control-next-icon"></span>
-                </a>
+               
 
                 <h4>La gran revelación de la Copa América: Perú</h4>
             </div>
@@ -138,7 +138,7 @@
             </tr>
             <tr>
                 <td>1</td>
-                <td nowrap> <img width="20" src="imagenes/brasil.png">Brasil</td>
+                <td nowrap> <img width="20"  alt="imagen" src="imagenes/brasil.png">Brasil</td>
                 <td>7</td>
                 <td>3</td>
                 <td>2</td>
@@ -148,7 +148,7 @@
             </tr>
             <tr>
                 <td>2</td>
-                <td nowrap> <img width="20" src="imagenes/venezuela.png">Venezuela</td>
+                <td nowrap> <img width="20" alt="imagen"  src="imagenes/venezuela.png">Venezuela</td>
                 <td>5</td>
                 <td>3</td>
                 <td>1</td>
@@ -158,7 +158,7 @@
             </tr>
             <tr>
                 <td>3</td>
-                <td nowrap> <img width="20" src="imagenes/peru.png">Perú </td>
+                <td nowrap> <img width="20"  alt="imagen" src="imagenes/peru.png">Perú </td>
                 <td>4</td>
                 <td>3</td>
                 <td>1</td>
@@ -168,7 +168,7 @@
             </tr>
             <tr>
                 <td>4</td>
-                <td nowrap> <img width="20" src="imagenes/bolivia.png">Bolivia</td>
+                <td nowrap> <img width="20"  alt="imagen" src="imagenes/bolivia.png">Bolivia</td>
                 <td>0</td>
                 <td>3</td>
                 <td>0</td>
@@ -196,7 +196,7 @@
         </tr>
         <tr>
             <td>1</td>
-            <td nowrap ><img width="20" src="imagenes/colombia.png">Colombia</td>
+            <td nowrap ><img width="20" alt="imagen"  src="imagenes/colombia.png">Colombia</td>
             <td>9</td>
             <td>3</td>
             <td>3</td>
@@ -206,7 +206,7 @@
         </tr>
         <tr>
             <td>2</td>
-            <td nowrap> <img width="20" src="imagenes/argentina.png">Argentina</td>
+            <td nowrap> <img width="20"  alt="imagen" src="imagenes/argentina.png">Argentina</td>
             <td>4</td>
             <td>3</td>
             <td>1</td>
@@ -216,7 +216,7 @@
         </tr>
         <tr>
             <td>3</td>
-            <td nowrap> <img width="20" src="imagenes/paraguay.png">Paraguay</td>
+            <td nowrap> <img width="20" alt="imagen"  src="imagenes/paraguay.png">Paraguay</td>
             <td>2</td>
             <td>3</td>
             <td>0</td>
@@ -226,7 +226,7 @@
         </tr>
         <tr>
             <td>4</td>
-            <td nowrap> <img width="20" src="imagenes/qatar.png">Qatar</td>
+            <td nowrap> <img width="20" alt="imagen"  src="imagenes/qatar.png">Qatar</td>
             <td>1</td>
             <td>3</td>
             <td>0</td>

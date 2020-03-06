@@ -10,7 +10,7 @@ error_reporting(E_ALL);
             <div class="card">
                 <div class="card-body">
                     <div>
-                        <img src="iconos/usuario.png">
+                        <img alt="imagen" src="iconos/usuario.png">
                     </div>
                     <div>
                         <h4>Sign Up</h4>
@@ -22,12 +22,14 @@ error_reporting(E_ALL);
                                     <?php if(isset($_POST['submit']) && empty($_POST['nombre_usuario'])) echo "<span style='color:red'>Debes introducir el nombre</span>"; ?>
 
                                 <div class="form-group col-md-12">
-                                   <input name="nombre_usuario" placeholder="*Nombre Usuario " class="form-control" type="text" value='<?php if(isset($_POST['submit']) && $_POST['nombre_usuario']!=null) echo $_POST['nombre_usuario'] ; ?>'>
+                                    <label for="nombre_usuario">Nombre Usuario</label>
+                                   <input id="nombre_usuario" name="nombre_usuario"  class="form-control" type="text" value='<?php if(isset($_POST['submit']) && $_POST['nombre_usuario']!=null) echo $_POST['nombre_usuario'] ; ?>'>
                                 </div>
                                     <?php if(isset($_POST['submit']) && empty($_POST['email'])) echo "<span style='color:red'>Debes introducir el email</span>"; ?>
 
                                 <div class="form-group col-md-12">
-                                    <input type="email" class="form-control" placeholder="*Email" name="email" value='<?php if(isset($_POST['submit']) && $_POST['email']!=null) echo $_POST['email'] ; ?>'>
+                                    <label for="email">Email</label>
+                                    <input id="email" type="email" class="form-control"  name="email" value='<?php if(isset($_POST['submit']) && $_POST['email']!=null) echo $_POST['email'] ; ?>'>
                                 </div>
                                 <?php 
                                 
@@ -45,52 +47,61 @@ error_reporting(E_ALL);
                                
 
                                 <div class="form-group col-md-12">
-                                    <input type="password" class="form-control"  placeholder="*Contraseña" name="password1" value='<?php if(isset($_POST['coinciden'])) echo $_POST['password1'] ; ?>'>
+                                    <label for="Contraseña">Contraseña</label>
+                                    <input id="Contraseña" type="password" class="form-control"   name="password1" value='<?php if(isset($_POST['coinciden'])) echo $_POST['password1'] ; ?>'>
                                 </div>
 
                                 <div class="form-group col-md-12">
-                                    <input type="password" class="form-control"  placeholder="*Repetir contraseña" name="password2" value='<?php if(isset($_POST['coinciden'])) echo $_POST['password2'] ; ?>'>
+                                    <label for="Contraseña2">Repetir Contraseña</label>
+                                    <input id="Contraseña2" type="password" class="form-control"   name="password2" value='<?php if(isset($_POST['coinciden'])) echo $_POST['password2'] ; ?>'>
                                 </div>
                                 <?php if(isset($_POST['submit']) && empty($_POST['nombre'])) echo "<span style='color:red'>Debes introducir el nombre</span>"; ?>
 
                                 <div class="form-group col-md-12">
-                                    <input name="nombre" placeholder="*Nombre" class="form-control" type="text" value='<?php if(isset($_POST['submit']) && $_POST['nombre']!=null) echo $_POST['nombre'] ; ?>'>
+                                    <label for="nombre">Nombre</label>
+                                    <input id="nombre" name="nombre"  class="form-control" type="text" value='<?php if(isset($_POST['submit']) && $_POST['nombre']!=null) echo $_POST['nombre'] ; ?>'>
                                 </div>
                                 <?php if(isset($_POST['submit']) && empty($_POST['apellido1'])) echo "<span style='color:red'>Debes introducir el 1er Apellido</span>"; ?>
 
                                 <div class="form-group col-md-12">
-                                    <input name="apellido1" placeholder="*Apellido 1" class="form-control" type="text" value='<?php if(isset($_POST['submit']) && $_POST['apellido1']!=null) echo $_POST['apellido1'] ; ?>'>
+                                    <label for="apellido1">Apellido 1</label>
+                                    <input id="apellido1" name="apellido1"  class="form-control" type="text" value='<?php if(isset($_POST['submit']) && $_POST['apellido1']!=null) echo $_POST['apellido1'] ; ?>'>
                                 </div>
 
                                 <div class="form-group col-md-12">
-                                    <input name="apellido2" placeholder="Apellido 2(Opcional)" class="form-control" type="text" value='<?php if(isset($_POST['submit']) && $_POST['apellido2']!=null) echo $_POST['apellido2'] ; ?>'>
+                                    <label for="apellido2">Apellido 2</label>
+                                    <input id="apellido2" name="apellido2" class="form-control" type="text" value='<?php if(isset($_POST['submit']) && $_POST['apellido2']!=null) echo $_POST['apellido2'] ; ?>'>
                                 </div>
                                 <?php if(isset($_POST['submit']) && empty($_POST['fecha_nacimiento'])) echo "<span style='color:red'>Debes introducir una fecha de nacimiento</span>"; ?>
                                
                                 
                                 <div class="form-group col-md-12">
-                                    <span>*Fecha Nacimiento:</span>
-                                    <input name="fecha_nacimiento" placeholder="Fecha Nacimiento" class="form-control" type="date" value='<?php if(isset($_POST['submit']) && $_POST['fecha_nacimiento']!=null) echo $_POST['fecha_nacimiento'] ; ?>'>
+                                    <label for="fecha">Fecha Nacimiento</label>
+                                    <input id="fecha" name="fecha_nacimiento" class="form-control" type="date" value='<?php if(isset($_POST['submit']) && $_POST['fecha_nacimiento']!=null) echo $_POST['fecha_nacimiento'] ; ?>'>
                                 </div>
                                 <?php if(isset($_POST['submit']) && empty($_POST['pais'])) echo "<span style='color:red'>Debes introducir un Pais</span>"; ?>
 
                                 <div class="form-group col-md-12">
-                                    <input name="pais" placeholder="*Pais" class="form-control" type="text" value='<?php if(isset($_POST['submit']) && $_POST['pais']!=null) echo $_POST['pais'] ; ?>'>
+                                    <label for="pais">Pais</label>
+                                    <input id="pais" name="pais"  class="form-control" type="text" value='<?php if(isset($_POST['submit']) && $_POST['pais']!=null) echo $_POST['pais'] ; ?>'>
                                 </div>
                                 <?php if(isset($_POST['submit']) && empty($_POST['codigo_postal'])) echo "<span style='color:red'>Debes introducir el codigo_postal</span>"; ?>
 
                                 <div class="form-group col-md-12">
-                                    <input name="codigo_postal" placeholder="*Codigo Postal" class="form-control" type="number" value='<?php if(isset($_POST['submit']) && $_POST['codigo_postal']!=null) echo $_POST['codigo_postal'] ; ?>'>
+                                    <label for="codigo_postal">Codigo Postal</label>
+                                    <input id="codigo_postal" name="codigo_postal"  class="form-control" type="number" value='<?php if(isset($_POST['submit']) && $_POST['codigo_postal']!=null) echo $_POST['codigo_postal'] ; ?>'>
                                 </div>
                                 <?php if(isset($_POST['submit']) && empty($_POST['telefono'])) echo "<span style='color:red'>Debes introducir el telefono</span>"; ?>
 
                                 <div class="form-group col-md-12">
-                                    <input name="telefono" placeholder="*Telefono" class="form-control" type="number" value='<?php if(isset($_POST['submit']) && $_POST['telefono']!=null) echo $_POST['telefono'] ; ?>'> 
+                                    <label for="telefono">Telefono</label>
+                                    <input id="telefono" name="telefono"  class="form-control" type="number" value='<?php if(isset($_POST['submit']) && $_POST['telefono']!=null) echo $_POST['telefono'] ; ?>'> 
                                 </div>
                             
                                 <div class="mx-auto">
-                                <input type="text" name="captcha" id="captcha" maxlength="6" size="6"/>
-                                <img src="captcha.php"/><br>
+                                    <label for="captcha">Captcha</label>
+                                <input id="captcha" type="text" name="captcha" id="captcha" maxlength="6" size="6"/>
+                                <img alt="captcha" src="captcha.php"/><br>
                           
                                           <?php if (isset($_POST['submit']) && ($_POST['captcha'] != $_SESSION['cap_code'])){
                                     
@@ -105,7 +116,7 @@ error_reporting(E_ALL);
                                  <?php if(isset($_POST['submit']) && (!isset($_POST['terminos']))) echo "<span style='color:red'>Debes aceptar los terminos</span>"; ?>
                                    
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" name="terminos" <?php if(isset($_POST['submit']) && (isset($_POST['terminos']))) echo "checked='terminos'"?>>
+                                        <input class="form-check-input" id="updatecheck1" type="checkbox" value="" name="terminos" <?php if(isset($_POST['submit']) && (isset($_POST['terminos']))) echo "checked='terminos'"?>>
                                         <label class="form-check-label" for="updatecheck1">
                                             <small>Acepto todos los <a href="#">terminos y condiciones </a></small>
 
